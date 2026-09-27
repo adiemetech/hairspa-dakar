@@ -1,0 +1,256 @@
+{
+  "seo": {
+    "title": "HairSpa Dakar – Centre de soins capillaires toutes textures à Dakar",
+    "description": "HairSpa Dakar, votre centre de soins capillaires à Sacré-Cœur 2. Spécialiste des cheveux naturels, crépus et bouclés. Diagnostic, soins profonds, coiffures protectrices. Prenez rendez-vous !"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "pricing": "Tarifs",
+    "testimonials": "Témoignages",
+    "contact": "Contact",
+    "openMenuAria": "Ouvrir le menu de navigation",
+    "closeMenuAria": "Fermer le menu de navigation",
+    "languageAria": "Choisir la langue"
+  },
+  "hours": {
+    "badge": "Ouvert 7j/7",
+    "short": "Lundi au dimanche : 10h00 – 19h00"
+  },
+  "cta": {
+    "booking": "Prendre Rendez-vous",
+    "bookingAria": "Prendre rendez-vous via WhatsApp (nouvel onglet)",
+    "discover": "Découvrir nos soins"
+  },
+  "alert": {
+    "message": "Notre unique adresse est à Sacré-Cœur 2, en face du restaurant OBV. Méfiez-vous des imitations."
+  },
+  "hero": {
+    "title": "Révélez la beauté de vos cheveux naturels",
+    "subtitle": "Centre de soins capillaires toutes textures à Dakar. Expertise, douceur et résultats.",
+    "badge": "4.3/5 ⭐ – 108 avis Google",
+    "imageAlt": "Cheveux naturels soignés dans une ambiance salon chaleureuse à Dakar"
+  },
+  "about": {
+    "eyebrow": "Notre philosophie",
+    "title": "Bien plus qu'un salon, un centre de soins",
+    "text": "HairSpa Dakar ne se définit pas comme un salon de coiffure traditionnel, mais comme un véritable centre de soins et d'éducation capillaire. Notre objectif : éduquer, motiver et accompagner les clientes pour obtenir des cheveux sains, longs et volumineux, quelle que soit leur origine ou la texture de leurs cheveux.",
+    "founder": "Fondé en 2017 par Marpessa, le centre propose une approche personnalisée de chaque routine capillaire.",
+    "pillars": {
+      "salon": {
+        "title": "Soins profonds en salon",
+        "text": "Des rituels complets réalisés par des expertes des cheveux texturés."
+      },
+      "home": {
+        "title": "Routine d'entretien à la maison",
+        "text": "Des conseils personnalisés pour prolonger les bienfaits des soins."
+      },
+      "protective": {
+        "title": "Coiffures protectrices adaptées",
+        "text": "Des coiffures douces qui respectent et protègent vos cheveux."
+      }
+    },
+    "promise": {
+      "title": "Notre promesse",
+      "text": "Des cheveux sains, longs et volumineux, quelle que soit la texture."
+    },
+    "imageAlt": "Marpessa, fondatrice de HairSpa Dakar, accompagnant une cliente"
+  },
+  "services": {
+    "eyebrow": "Expertise & douceur",
+    "title": "Nos Prestations",
+    "items": {
+      "diagnostic": {
+        "title": "Diagnostic capillaire personnalisé",
+        "text": "Analyse pour fixer des objectifs de pousse, de volume et de santé."
+      },
+      "deep": {
+        "title": "Soins profonds spécifiques",
+        "text": "Hydratation maximale, soins vapeur, détox du cuir chevelu, traitements réparateurs."
+      },
+      "massage": {
+        "title": "Massages du cuir chevelu",
+        "text": "Intégrés aux rituels de lavage pour stimuler la pousse et détendre."
+      },
+      "braids": {
+        "title": "Coiffures protectrices & tresses",
+        "text": "Reconnues pour leur douceur (braids, twists, coiffures sans rajouts)."
+      }
+    },
+    "note": "Les réservations en ligne sont gérées sur notre plateforme partenaire.",
+    "imageAlts": {
+      "diagnostic": "Diagnostic capillaire personnalisé chez HairSpa Dakar",
+      "deep": "Soin profond vapeur sur cheveux naturels",
+      "massage": "Massage du cuir chevelu pendant un rituel de lavage",
+      "braids": "Coiffure protectrice : braids sans rajouts"
+    }
+  },
+  "pricing": {
+    "eyebrow": "Grille tarifaire",
+    "title": "Tarifs & Prestations",
+    "tabs": {
+      "soins": "Soins & Traitements",
+      "coupes": "Coupes & Défrisages",
+      "coiffures": "Coiffures",
+      "headspa": "Head Spa",
+      "forfaits": "Forfaits & Abonnements"
+    },
+    "headspaBadge": "Soin premium",
+    "lists": {
+      "soins": [
+        { "label": "Shampoing / démêlant", "price": "5 000 FCFA" },
+        { "label": "Shampoing / soin profond vapeur", "price": "8 000 FCFA" },
+        { "label": "Supplément shampoing antipelliculaire", "price": "5 000 FCFA" },
+        { "label": "Bain d'huiles / shampoing", "price": "8 000 FCFA" },
+        { "label": "Supplément bain d'huile ayurvédique", "price": "5 000 FCFA" },
+        { "label": "Rituel purifiant / détox capillaire (gommer, clarifier, hydrater)", "price": "10 000 FCFA" },
+        { "label": "Massage aux huiles de croissance", "price": "3 000 FCFA" },
+        { "label": "Massage au sérum ayurvédique", "price": "5 000 FCFA" },
+        { "label": "Soin réparateur après défrisage", "price": "5 000 FCFA" },
+        { "label": "Traitement intensif antichute / anticasse", "price": "20 000 FCFA" }
+      ],
+      "coupes": [
+        { "label": "Coupe pointes", "price": "5 000 FCFA" },
+        { "label": "Coupe transformation", "price": "15 000 FCFA" },
+        { "label": "Big chop shampoing", "price": "10 000 FCFA" },
+        { "label": "Défrisage", "price": "17 000 FCFA" },
+        { "label": "Défrisage avec produit cliente", "price": "10 000 FCFA" },
+        { "label": "Défrisage avec soin", "price": "22 000 FCFA" },
+        { "label": "Coloration racines", "price": "10 000 FCFA" },
+        { "label": "Coloration tête entière", "price": "10 000 FCFA" },
+        { "label": "Balayage et soin", "price": "25 000 FCFA" }
+      ],
+      "coiffures": [
+        { "label": "Mise en plis", "price": "10 000 - 12 000 FCFA" },
+        { "label": "Brushing cheveux défrisés", "price": "10 000 - 12 000 FCFA" },
+        { "label": "Brushing lisse cheveux naturels", "price": "15 000 - 20 000 FCFA" },
+        { "label": "Blow out cheveux naturels", "price": "8 000 - 10 000 FCFA" },
+        { "label": "Braid out / twist out / bantou knot out", "price": "10 000 FCFA" },
+        { "label": "Chignon tiré avec rajouts", "price": "10 000 FCFA" },
+        { "label": "Chignon élaboré", "price": "12 000 FCFA" },
+        { "label": "Tissage fermé - tissage vixen", "price": "18 000 FCFA" },
+        { "label": "Tissage ouvert", "price": "15 000 FCFA" },
+        { "label": "Bandes tissage (5 à 7 lignes)", "price": "10 000 FCFA" },
+        { "label": "Tresses américaines", "price": "12 000 - 15 000 FCFA" },
+        { "label": "Mèches vanilles - mèches kinky", "price": "15 000 - 20 000 FCFA" },
+        { "label": "Box braids - knotless", "price": "15 000 - 20 000 FCFA" },
+        { "label": "Tresses sur cheveux naturels", "price": "5 000 - 8 000 FCFA" },
+        { "label": "Tresses écailles sur cheveux naturels", "price": "8 000 FCFA" },
+        { "label": "Tresses écailles avec mèches", "price": "12 000 - 15 000 FCFA" },
+        { "label": "Life rajouts", "price": "15 000 FCFA" },
+        { "label": "Crochet braids", "price": "15 000 FCFA" },
+        { "label": "Coiffure enfants", "price": "5 000 FCFA" },
+        { "label": "Coiffure enfants avec mèches", "price": "8 000 - 10 000 FCFA" },
+        { "label": "Détressage", "price": "5 000 FCFA" },
+        { "label": "Détissage", "price": "5 000 FCFA" },
+        { "label": "Boucles anglaises", "price": "15 000 FCFA" },
+        { "label": "Coiffure cérémonie", "price": "20 000 FCFA" },
+        { "label": "Flexi rods", "price": "10 000 FCFA" },
+        { "label": "Détox locks", "price": "10 000 FCFA" },
+        { "label": "Locks (selon la taille et le volume)", "price": "30 000 - 150 000 FCFA" },
+        { "label": "Reprise locks", "price": "15 000 FCFA" },
+        { "label": "Lissage steampod simple", "price": "15 000 - 20 000 FCFA" }
+      ],
+      "forfaits": [
+        { "label": "Formule Routine Complète", "detail": "4 séances sur 6 semaines : massage, bain d'huiles, shampoing, soin vapeur, coiffage", "price": "55 000 - 60 000 FCFA" },
+        { "label": "Formule Routine Simple", "detail": "4 séances sur 6 semaines : shampoing, soin vapeur, coiffage", "price": "45 000 - 50 000 FCFA" },
+        { "label": "Routine complète ayurveda", "price": "60 000 FCFA" },
+        { "label": "Routine enfants simple / complète", "price": "35 000 - 45 000 FCFA" },
+        { "label": "Routine complète avec produits cliente", "price": "45 000 FCFA" },
+        { "label": "Routine simple avec produits cliente", "price": "35 000 FCFA" },
+        { "label": "Forfait Journée (simple)", "price": "15 000 - 18 000 FCFA" },
+        { "label": "Forfait Journée (complète)", "price": "20 000 - 23 000 FCFA" },
+        { "label": "Forfait Journée enfant (simple)", "price": "12 000 - 15 000 FCFA" },
+        { "label": "Forfait Journée enfant (complète)", "price": "15 000 - 18 000 FCFA" },
+        { "label": "Forfait Journée lissage", "detail": "Shampoing, soin et lissage fer ou steampod", "price": "25 000 - 30 000 FCFA" }
+      ]
+    },
+    "headspa": {
+      "simple": {
+        "name": "Formule Simple",
+        "price": "30 000 FCFA",
+        "includes": [
+          "Diagnostic capillaire personnalisé",
+          "Massage du cuir chevelu",
+          "Shampoing",
+          "Soin profond à la vapeur",
+          "Séchage des cheveux (sur demande)"
+        ]
+      },
+      "complete": {
+        "name": "Formule Complète",
+        "price": "40 000 FCFA",
+        "includes": [
+          "Diagnostic capillaire personnalisé",
+          "Massage du cuir chevelu",
+          "Shampoing",
+          "Soin profond à la vapeur",
+          "Réalisation d'une coiffure protectrice sur cheveux naturels"
+        ]
+      },
+      "note": "Si la coiffure choisie nécessite des mèches, un supplément sera appliqué. Détressage : entre 3 000 et 5 000 FCFA. Durée : entre 1h30 et 2h30."
+    },
+    "notes": [
+      "Les tarifs mentionnés sont donnés à titre indicatif et sont susceptibles de changer en fonction de la longueur et du volume des cheveux.",
+      "Les mèches utilisées pour les coiffures sont aux frais de la cliente. Mèches disponibles au salon sur simple demande.",
+      "Un supplément s'applique si la coiffure choisie nécessite des mèches (nombre de paquets et complexité de la coupe)."
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Avis clients",
+    "title": "Elles nous font confiance",
+    "badge": "4.3/5 sur plus de 100 avis Google",
+    "items": [
+      {
+        "quote": "La douceur extrême lors du démêlage, du lavage et du séchage. Un vrai bonheur pour mes cheveux naturels.",
+        "author": "Avis Google"
+      },
+      {
+        "quote": "Patience, écoute et accueil bienveillant. On se sent vraiment accompagnée.",
+        "author": "Avis Google"
+      },
+      {
+        "quote": "Enfin une vraie expertise pour les cheveux curly et afro à Dakar. Ailleurs, on ne savait pas quoi faire de mes cheveux.",
+        "author": "Avis Google"
+      },
+      {
+        "quote": "L'accueil de la gérante est chaleureux et les coiffeuses sont d'une patience incroyable. Je recommande à 100 %.",
+        "author": "Avis Google"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Sacré-Cœur 2, Dakar",
+    "title": "Venez nous voir",
+    "addressLabel": "Adresse",
+    "address": "Sacré-Cœur 2, en face du restaurant OBV, Dakar, Sénégal",
+    "phoneLabel": "Téléphone / WhatsApp",
+    "hoursLabel": "Horaires d'ouverture",
+    "hours": "Lundi au dimanche, 10h00 – 19h00",
+    "languagesLabel": "Langues parlées",
+    "languages": "Wolof / Français / Anglais",
+    "mapTitle": "Carte : HairSpa Dakar, Sacré-Cœur 2"
+  },
+  "footer": {
+    "slogan": "Votre centre de soins capillaires toutes textures de cheveux à Dakar ! Expertise et résultats.",
+    "quickLinks": "Liens rapides",
+    "follow": "Suivez-nous",
+    "rights": "© 2025 HairSpa Dakar. Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité"
+  },
+  "whatsapp": {
+    "ariaLabel": "Contacter HairSpa Dakar sur WhatsApp",
+    "message": "Bonjour, je souhaite prendre rendez-vous pour un soin capillaire."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu principal"
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "privacyTitle": "Politique de confidentialité",
+    "placeholder": "Page en cours de rédaction.",
+    "back": "Retour à l'accueil"
+  }
+}

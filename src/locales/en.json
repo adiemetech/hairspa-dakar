@@ -1,0 +1,256 @@
+{
+  "seo": {
+    "title": "HairSpa Dakar – Hair Care Center for All Textures in Dakar",
+    "description": "HairSpa Dakar, your hair care center in Sacré-Cœur 2. Specializing in natural, coily, and curly hair. Diagnosis, deep treatments, protective styles. Book now!"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "openMenuAria": "Open navigation menu",
+    "closeMenuAria": "Close navigation menu",
+    "languageAria": "Choose language"
+  },
+  "hours": {
+    "badge": "Open 7 days a week",
+    "short": "Monday to Sunday: 10:00 AM – 7:00 PM"
+  },
+  "cta": {
+    "booking": "Book an Appointment",
+    "bookingAria": "Book an appointment via WhatsApp (new tab)",
+    "discover": "Discover our treatments"
+  },
+  "alert": {
+    "message": "Our only location is in Sacré-Cœur 2, opposite OBV restaurant. Beware of imitations."
+  },
+  "hero": {
+    "title": "Reveal the beauty of your natural hair",
+    "subtitle": "Hair care center for all textures in Dakar. Expertise, gentleness and results.",
+    "badge": "4.3/5 ⭐ – 108 Google reviews",
+    "imageAlt": "Beautifully cared-for natural hair in a warm salon atmosphere in Dakar"
+  },
+  "about": {
+    "eyebrow": "Our philosophy",
+    "title": "Much more than a salon, a care center",
+    "text": "HairSpa Dakar is not a traditional hair salon, but a true hair care and education center. Our goal: to educate, motivate, and support clients in achieving healthy, long, and voluminous hair, regardless of origin or hair texture.",
+    "founder": "Founded in 2017 by Marpessa, the center offers a personalized approach to every hair routine.",
+    "pillars": {
+      "salon": {
+        "title": "Deep in-salon treatments",
+        "text": "Complete rituals performed by textured-hair experts."
+      },
+      "home": {
+        "title": "At-home maintenance routine",
+        "text": "Personalized advice to extend the benefits of your treatments."
+      },
+      "protective": {
+        "title": "Adapted protective styles",
+        "text": "Gentle styles that respect and protect your hair."
+      }
+    },
+    "promise": {
+      "title": "Our promise",
+      "text": "Healthy, long and voluminous hair, whatever the texture."
+    },
+    "imageAlt": "Marpessa, founder of HairSpa Dakar, supporting a client"
+  },
+  "services": {
+    "eyebrow": "Expertise & gentleness",
+    "title": "Our Services",
+    "items": {
+      "diagnostic": {
+        "title": "Personalized hair diagnosis",
+        "text": "Analysis to set growth, volume, and health goals."
+      },
+      "deep": {
+        "title": "Specific deep treatments",
+        "text": "Maximum hydration, steam treatments, scalp detox, repairing treatments."
+      },
+      "massage": {
+        "title": "Scalp massages",
+        "text": "Integrated into washing rituals to stimulate growth and relax."
+      },
+      "braids": {
+        "title": "Protective styles & braids",
+        "text": "Known for their gentleness (braids, twists, styles without extensions)."
+      }
+    },
+    "note": "Online bookings are managed on our partner platform.",
+    "imageAlts": {
+      "diagnostic": "Personalized hair diagnosis at HairSpa Dakar",
+      "deep": "Deep steam treatment on natural hair",
+      "massage": "Scalp massage during a washing ritual",
+      "braids": "Protective style: braids without extensions"
+    }
+  },
+  "pricing": {
+    "eyebrow": "Price list",
+    "title": "Prices & Services",
+    "tabs": {
+      "soins": "Treatments & Care",
+      "coupes": "Cuts & Relaxing",
+      "coiffures": "Styling",
+      "headspa": "Head Spa",
+      "forfaits": "Packages & Plans"
+    },
+    "headspaBadge": "Premium treatment",
+    "lists": {
+      "soins": [
+        { "label": "Shampoo / detangling", "price": "5 000 FCFA" },
+        { "label": "Shampoo / deep steam treatment", "price": "8 000 FCFA" },
+        { "label": "Anti-dandruff shampoo supplement", "price": "5 000 FCFA" },
+        { "label": "Oil bath / shampoo", "price": "8 000 FCFA" },
+        { "label": "Ayurvedic oil bath supplement", "price": "5 000 FCFA" },
+        { "label": "Purifying ritual / hair detox (exfoliate, clarify, moisturize)", "price": "10 000 FCFA" },
+        { "label": "Growth-oil massage", "price": "3 000 FCFA" },
+        { "label": "Ayurvedic serum massage", "price": "5 000 FCFA" },
+        { "label": "Repairing treatment after relaxing", "price": "5 000 FCFA" },
+        { "label": "Intensive anti-hair-loss / anti-breakage treatment", "price": "20 000 FCFA" }
+      ],
+      "coupes": [
+        { "label": "Ends trim", "price": "5 000 FCFA" },
+        { "label": "Transformation cut", "price": "15 000 FCFA" },
+        { "label": "Big chop with shampoo", "price": "10 000 FCFA" },
+        { "label": "Relaxing", "price": "17 000 FCFA" },
+        { "label": "Relaxing with client's own product", "price": "10 000 FCFA" },
+        { "label": "Relaxing with treatment", "price": "22 000 FCFA" },
+        { "label": "Root color", "price": "10 000 FCFA" },
+        { "label": "Full-head color", "price": "10 000 FCFA" },
+        { "label": "Balayage and treatment", "price": "25 000 FCFA" }
+      ],
+      "coiffures": [
+        { "label": "Set / mise en plis", "price": "10 000 - 12 000 FCFA" },
+        { "label": "Blow-dry on relaxed hair", "price": "10 000 - 12 000 FCFA" },
+        { "label": "Smooth blow-dry on natural hair", "price": "15 000 - 20 000 FCFA" },
+        { "label": "Blow-out on natural hair", "price": "8 000 - 10 000 FCFA" },
+        { "label": "Braid out / twist out / bantou knot out", "price": "10 000 FCFA" },
+        { "label": "Sleek bun with extensions", "price": "10 000 FCFA" },
+        { "label": "Elaborate updo", "price": "12 000 FCFA" },
+        { "label": "Closed weave - vixen weave", "price": "18 000 FCFA" },
+        { "label": "Open weave", "price": "15 000 FCFA" },
+        { "label": "Weave bands (5 to 7 rows)", "price": "10 000 FCFA" },
+        { "label": "American braids", "price": "12 000 - 15 000 FCFA" },
+        { "label": "Vanilla twists - kinky twists", "price": "15 000 - 20 000 FCFA" },
+        { "label": "Box braids - knotless", "price": "15 000 - 20 000 FCFA" },
+        { "label": "Braids on natural hair", "price": "5 000 - 8 000 FCFA" },
+        { "label": "Scale braids on natural hair", "price": "8 000 FCFA" },
+        { "label": "Scale braids with extensions", "price": "12 000 - 15 000 FCFA" },
+        { "label": "Life extensions", "price": "15 000 FCFA" },
+        { "label": "Crochet braids", "price": "15 000 FCFA" },
+        { "label": "Children's style", "price": "5 000 FCFA" },
+        { "label": "Children's style with extensions", "price": "8 000 - 10 000 FCFA" },
+        { "label": "Braid removal", "price": "5 000 FCFA" },
+        { "label": "Weave removal", "price": "5 000 FCFA" },
+        { "label": "Defined curls", "price": "15 000 FCFA" },
+        { "label": "Ceremony style", "price": "20 000 FCFA" },
+        { "label": "Flexi rods", "price": "10 000 FCFA" },
+        { "label": "Locs detox", "price": "10 000 FCFA" },
+        { "label": "Locs (depending on size and volume)", "price": "30 000 - 150 000 FCFA" },
+        { "label": "Locs retwist", "price": "15 000 FCFA" },
+        { "label": "Simple steampod straightening", "price": "15 000 - 20 000 FCFA" }
+      ],
+      "forfaits": [
+        { "label": "Complete Routine plan", "detail": "4 sessions over 6 weeks: massage, oil bath, shampoo, steam treatment, styling", "price": "55 000 - 60 000 FCFA" },
+        { "label": "Simple Routine plan", "detail": "4 sessions over 6 weeks: shampoo, steam treatment, styling", "price": "45 000 - 50 000 FCFA" },
+        { "label": "Complete ayurvedic routine", "price": "60 000 FCFA" },
+        { "label": "Children's simple / complete routine", "price": "35 000 - 45 000 FCFA" },
+        { "label": "Complete routine with client's own products", "price": "45 000 FCFA" },
+        { "label": "Simple routine with client's own products", "price": "35 000 FCFA" },
+        { "label": "Day package (simple)", "price": "15 000 - 18 000 FCFA" },
+        { "label": "Day package (complete)", "price": "20 000 - 23 000 FCFA" },
+        { "label": "Children's day package (simple)", "price": "12 000 - 15 000 FCFA" },
+        { "label": "Children's day package (complete)", "price": "15 000 - 18 000 FCFA" },
+        { "label": "Straightening day package", "detail": "Shampoo, treatment and iron or steampod straightening", "price": "25 000 - 30 000 FCFA" }
+      ]
+    },
+    "headspa": {
+      "simple": {
+        "name": "Simple Formula",
+        "price": "30 000 FCFA",
+        "includes": [
+          "Personalized hair diagnosis",
+          "Scalp massage",
+          "Shampoo",
+          "Deep steam treatment",
+          "Hair drying (on request)"
+        ]
+      },
+      "complete": {
+        "name": "Complete Formula",
+        "price": "40 000 FCFA",
+        "includes": [
+          "Personalized hair diagnosis",
+          "Scalp massage",
+          "Shampoo",
+          "Deep steam treatment",
+          "Protective style created on natural hair"
+        ]
+      },
+      "note": "If the chosen style requires extensions, a supplement will apply. Braid removal: between 3 000 and 5 000 FCFA. Duration: between 1h30 and 2h30."
+    },
+    "notes": [
+      "The prices listed are indicative and may vary depending on hair length and volume.",
+      "Extensions used for styles are at the client's expense. Extensions available at the salon on request.",
+      "A supplement applies if the chosen style requires extensions (number of packs and cut complexity)."
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client reviews",
+    "title": "They trust us",
+    "badge": "4.3/5 on more than 100 Google reviews",
+    "items": [
+      {
+        "quote": "Extreme gentleness during detangling, washing, and drying. A real joy for my natural hair.",
+        "author": "Google review"
+      },
+      {
+        "quote": "Patience, listening, and a warm welcome. You truly feel supported.",
+        "author": "Google review"
+      },
+      {
+        "quote": "Finally real expertise for curly and afro hair in Dakar. Elsewhere, nobody knew what to do with my hair.",
+        "author": "Google review"
+      },
+      {
+        "quote": "The manager's welcome is warm and the stylists are incredibly patient. I recommend 100%.",
+        "author": "Google review"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Sacré-Cœur 2, Dakar",
+    "title": "Come and see us",
+    "addressLabel": "Address",
+    "address": "Sacré-Cœur 2, opposite OBV restaurant, Dakar, Senegal",
+    "phoneLabel": "Phone / WhatsApp",
+    "hoursLabel": "Opening hours",
+    "hours": "Monday to Sunday, 10:00 AM – 7:00 PM",
+    "languagesLabel": "Languages spoken",
+    "languages": "Wolof / French / English",
+    "mapTitle": "Map: HairSpa Dakar, Sacré-Cœur 2"
+  },
+  "footer": {
+    "slogan": "Your hair care center for all hair textures in Dakar! Expertise and results.",
+    "quickLinks": "Quick links",
+    "follow": "Follow us",
+    "rights": "© 2025 HairSpa Dakar. All rights reserved.",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy"
+  },
+  "whatsapp": {
+    "ariaLabel": "Contact HairSpa Dakar on WhatsApp",
+    "message": "Hello, I would like to book an appointment for a hair treatment."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  },
+  "legal": {
+    "title": "Legal notice",
+    "privacyTitle": "Privacy policy",
+    "placeholder": "Page under construction.",
+    "back": "Back to home"
+  }
+}

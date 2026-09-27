@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Design system HairSpa Dakar — palette extraite du logo officiel (Tailwind v4) */
+@theme {
+  /* Rose corail (Hair Spa) — couleur primaire : boutons, titres, accents */
+  --color-primary: #f55a63;
+  --color-primary-dark: #d9434c;
+  --color-primary-light: #fde3e5;
+
+  /* Terracotta / orange brûlé (DAKAR) — secondaire : sous-titres, bordures, hover */
+  --color-secondary: #d94a20;
+  --color-secondary-dark: #b13c18;
+  --color-secondary-light: #fbe4da;
+
+  /* Crème / blanc cassé — fond principal */
+  --color-cream: #fdf8f3;
+
+  /* Brun foncé / anthracite — texte principal */
+  --color-ink: #3d2c2c;
+
+  /* Or subtil — accents premium (Head Spa, forfaits) */
+  --color-gold: #c9a961;
+  --color-gold-light: #f0e6cf;
+
+  /* Typographie */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-script: "Great Vibes", cursive;
+
+  /* Coins arrondis généreux (cartes, boutons) */
+  --radius-card: 1rem;
+  --radius-btn: 9999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Anneau de focus visible cohérent sur tout le site (accessibilité clavier) */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+body {
+  @apply bg-cream font-sans text-ink antialiased;
+}
