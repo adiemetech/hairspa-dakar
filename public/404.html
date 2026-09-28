@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page introuvable – HairSpa Dakar</title>
+    <meta name="description" content="La page demandée n'existe pas. Retournez à l'accueil de HairSpa Dakar, centre de soins capillaires toutes textures à Sacré-Cœur 2, Dakar." />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="/images/logo/logo-hairspa.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #f55a63;
+        --secondary: #d94a20;
+        --cream: #fdf8f3;
+        --ink: #2a1e1c;
+        --wa: #25d366;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: linear-gradient(160deg, var(--cream), #f7ece6);
+        font-family: 'Inter', system-ui, sans-serif;
+        color: var(--ink);
+        text-align: center;
+      }
+      .card {
+        max-width: 480px;
+        background: #fff;
+        border-radius: 24px;
+        padding: 48px 32px;
+        box-shadow: 0 20px 50px rgba(42, 30, 28, 0.12);
+      }
+      .code {
+        font-family: 'Playfair Display', serif;
+        font-size: 88px;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--primary);
+        margin: 0;
+      }
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 26px;
+        margin: 12px 0 8px;
+      }
+      p { color: rgba(42, 30, 28, 0.7); font-size: 15px; line-height: 1.6; margin: 0 0 28px; }
+      .actions { display: flex; flex-direction: column; gap: 12px; }
+      a.btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 13px 22px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        transition: transform 0.15s ease, opacity 0.15s ease;
+      }
+      a.btn:hover { transform: translateY(-2px); opacity: 0.92; }
+      .primary { background: var(--primary); color: #fff; }
+      .wa { background: var(--wa); color: #fff; }
+      .lang { margin-top: 24px; font-size: 13px; color: rgba(42, 30, 28, 0.55); }
+      .lang a { color: var(--secondary); font-weight: 600; text-decoration: none; margin: 0 6px; }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <p class="code">404</p>
+      <h1>Page introuvable</h1>
+      <p>
+        Désolé, la page que vous cherchez n'existe pas ou a été déplacée.<br />
+        <em>Sorry, the page you are looking for doesn't exist or has moved.</em>
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="/fr/">Retour à l'accueil · Back home</a>
+        <a
+          class="btn wa"
+          href="https://wa.me/221778582196?text=Bonjour%20HairSpa%20Dakar%2C%20je%20souhaite%20prendre%20rendez-vous."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Prendre rendez-vous sur WhatsApp
+        </a>
+      </div>
+      <div class="lang">
+        <a href="/fr/">Français</a> · <a href="/en/">English</a>
+      </div>
+    </main>
+  </body>
+</html>

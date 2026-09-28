@@ -148,10 +148,13 @@
     "read": "Read the article",
     "backToList": "All tips",
     "backHome": "Back to home",
+    "ctaTitle": "Ready to treat your hair?",
+    "ctaText": "Book your free hair diagnosis and leave with a routine tailored to your texture.",
     "articles": {
       "routine-cheveux-naturels": {
-        "title": "Starting a natural hair routine",
-        "intro": "The basics of a simple, effective routine for coily and curly hair.",
+        "title": "How to care for kinky hair in Dakar",
+        "intro": "The basics of a simple, effective routine for coily and curly hair, adapted to Dakar's dry, dusty climate.",
+        "metaDescription": "Caring for kinky hair in Dakar: gentle washing, hydration, sealing and protective styles. HairSpa Dakar's tips for strong, shiny natural hair.",
         "paragraphs": [
           "Start by observing your hair: porosity, density and dryness level determine the right products. An in-salon diagnosis helps set realistic growth and volume goals.",
           "Wash gently: a mild shampoo followed by a hydrating deep treatment, once or twice a week, is enough in most cases. Detangling is always done on damp hair saturated with conditioner.",
@@ -160,8 +163,9 @@
         ]
       },
       "coiffures-protectrices": {
-        "title": "Protective styles: choosing them well",
-        "intro": "Braids, twists, buns: how to protect your hair without breaking it.",
+        "title": "Choosing a protective style for your texture",
+        "intro": "Braids, twists, buns: how to choose and install protection suited to your texture, without breakage.",
+        "metaDescription": "Braids, twists, buns: pick the right protective style for your hair texture. Tension-free installation and care by HairSpa Dakar.",
         "paragraphs": [
           "A protective style limits daily manipulation and preserves the ends. But it must be installed without excessive tension: a braid pulling at the hairline or temples will cause breakage.",
           "Prepare your hair before installation: shampoo, deep treatment and careful detangling. Clean, moisturized hair gets far more benefit from the protection.",
@@ -170,8 +174,9 @@
         ]
       },
       "entretenir-soin-vapeur": {
-        "title": "Making the most of your steam treatment",
-        "intro": "Habits that keep the hydration going between appointments.",
+        "title": "The benefits of steam treatment for natural hair",
+        "intro": "Why steam treatment is natural hair's best ally in Dakar, and the habits that keep hydration going between appointments.",
+        "metaDescription": "Steam treatment opens the cuticles and deeply hydrates natural hair. Discover its benefits and how to extend them at home, in Dakar.",
         "paragraphs": [
           "Steam opens the cuticles and lets the treatment penetrate deeply: it is the most effective step of your hair routine. But its benefits are also maintained at home.",
           "In the following days, keep moisture up with a light leave-in, plus a hydrating spray if your ends feel dry. Avoid unprotected direct heat.",
@@ -296,6 +301,20 @@
     "eyebrow": "Client reviews",
     "title": "They trust us",
     "badge": "4.3/5 on more than 100 Google reviews",
+    "stats": {
+      "reviews": { "value": 108, "suffix": "+", "decimals": 0, "label": "Google reviews" },
+      "rating": { "value": 4.3, "suffix": "/5", "decimals": 1, "label": "average rating" },
+      "clients": { "value": 7, "suffix": "/7", "decimals": 0, "label": "days a week" }
+    },
+    "trust": {
+      "title": "Why choose us",
+      "badges": [
+        "Verified Google reviews 4.3★",
+        "Free hair diagnosis",
+        "Products suited to every texture",
+        "Open 7 days a week in Sacré-Cœur 2"
+      ]
+    },
     "items": [
       {
         "quote": "Extreme gentleness during detangling, washing, and drying. A real joy for my natural hair.",

@@ -148,10 +148,13 @@
     "read": "Lire l'article",
     "backToList": "Tous les conseils",
     "backHome": "Retour à l'accueil",
+    "ctaTitle": "Prête à chouchouter vos cheveux ?",
+    "ctaText": "Réservez votre diagnostic capillaire offert et repartez avec une routine sur mesure pour votre texture.",
     "articles": {
       "routine-cheveux-naturels": {
-        "title": "Démarrer une routine cheveux naturels",
-        "intro": "Les bases d'une routine simple et efficace pour cheveux crépus et bouclés.",
+        "title": "Comment entretenir ses cheveux crépus à Dakar",
+        "intro": "Les bases d'une routine simple et efficace pour cheveux crépus et bouclés, adaptée au climat sec et poussiéreux de Dakar.",
+        "metaDescription": "Entretien des cheveux crépus à Dakar : lavage doux, hydratation, scellage et coiffures protectrices. Les conseils HairSpa Dakar pour des cheveux naturels forts et brillants.",
         "paragraphs": [
           "Observez d'abord votre cheveu : porosité, densité et niveau de sécheresse déterminent les produits adaptés. Un diagnostic en salon permet de fixer des objectifs réalistes de pousse et de volume.",
           "Lavez sans agresser : un shampoing doux suivi d'un soin profond hydratant, une à deux fois par semaine, suffit dans la plupart des cas. Le démêlage se fait toujours sur cheveux humides, imprégnés d'après-shampoing.",
@@ -160,8 +163,9 @@
         ]
       },
       "coiffures-protectrices": {
-        "title": "Coiffures protectrices : bien les choisir",
-        "intro": "Braids, twists, chignons : comment protéger ses cheveux sans les casser.",
+        "title": "Choisir sa coiffure protectrice selon sa texture",
+        "intro": "Braids, twists, chignons : comment choisir et poser une protection adaptée à votre texture, sans casser vos cheveux.",
+        "metaDescription": "Tresses, twists, chignons : bien choisir sa coiffure protectrice selon sa texture de cheveux. Pose sans tension et entretien par HairSpa Dakar.",
         "paragraphs": [
           "Une coiffure protectrice limite les manipulations quotidiennes et préserve les pointes. Encore faut-il qu'elle soit posée sans tension excessive : une tresse qui tire au niveau du front ou des tempes provoquera des cassures.",
           "Préparez vos cheveux avant la pose : shampoing, soin profond et démêlage soigneux. Des cheveux posés propres et hydratés tirent bien meilleur parti de la protection.",
@@ -170,8 +174,9 @@
         ]
       },
       "entretenir-soin-vapeur": {
-        "title": "Prolonger les bienfaits d'un soin vapeur",
-        "intro": "Les gestes qui font durer l'hydratation entre deux rendez-vous.",
+        "title": "Les bienfaits du soin vapeur pour cheveux naturels",
+        "intro": "Pourquoi le soin vapeur est l'allié des cheveux naturels à Dakar, et les gestes qui font durer l'hydratation entre deux rendez-vous.",
+        "metaDescription": "Le soin vapeur ouvre les écailles et hydrate les cheveux naturels en profondeur. Découvrez ses bienfaits et comment prolonger ses effets à la maison, à Dakar.",
         "paragraphs": [
           "Le soin vapeur ouvre les écailles et fait pénétrer le soin en profondeur : c'est le moment le plus efficace de votre routine capillaire. Mais ses effets se cultivent aussi à la maison.",
           "Dans les jours qui suivent, maintenez l'hydratation avec un leave-in léger, et un spray hydratant si vos pointes s'assèchent. Évitez les sources de chaleur directe non protégées.",
@@ -296,6 +301,20 @@
     "eyebrow": "Avis clients",
     "title": "Elles nous font confiance",
     "badge": "4.3/5 sur plus de 100 avis Google",
+    "stats": {
+      "reviews": { "value": 108, "suffix": "+", "decimals": 0, "label": "avis Google" },
+      "rating": { "value": 4.3, "suffix": "/5", "decimals": 1, "label": "note moyenne" },
+      "clients": { "value": 7, "suffix": "j/7", "decimals": 0, "label": "jours d'ouverture" }
+    },
+    "trust": {
+      "title": "Pourquoi nous choisir",
+      "badges": [
+        "Avis Google vérifiés 4,3★",
+        "Diagnostic capillaire offert",
+        "Produits adaptés à chaque texture",
+        "Ouvert 7j/7 à Sacré-Cœur 2"
+      ]
+    },
     "items": [
       {
         "quote": "La douceur extrême lors du démêlage, du lavage et du séchage. Un vrai bonheur pour mes cheveux naturels.",

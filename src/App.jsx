@@ -1,4 +1,4 @@
-import { MotionConfig } from 'framer-motion'
+import { AnimatePresence, MotionConfig, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import About from './components/About'
@@ -56,6 +56,7 @@ export default function App() {
   const slug = conseilsSlug(hash)
   const isConseils = slug !== null
   const isSubPage = Boolean(legalTitleKey) || isConseils
+  const routeKey = legalTitleKey ? hash : isConseils ? `conseils:${slug || 'list'}` : 'home'
 
   useEffect(() => {
     if (isSubPage) {
@@ -79,39 +80,49 @@ export default function App() {
       </a>
       <AlertBanner />
       <Header />
-      {legalTitleKey ? (
-        <LegalPage titleKey={legalTitleKey} />
-      ) : isConseils ? (
-        <ConseilsPage slug={slug} />
-      ) : (
-        <main id="contenu">
-          <Hero />
-          <Reveal>
-            <About />
-          </Reveal>
-          <Reveal>
-            <Services />
-          </Reveal>
-          <Reveal>
-            <Gallery />
-          </Reveal>
-          <Reveal>
-            <Realisations />
-          </Reveal>
-          <Reveal>
-            <Pricing />
-          </Reveal>
-          <Reveal>
-            <GiftCards />
-          </Reveal>
-          <Reveal>
-            <Testimonials />
-          </Reveal>
-          <Reveal>
-            <Contact />
-          </Reveal>
-        </main>
-      )}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={routeKey}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
+        >
+          {legalTitleKey ? (
+            <LegalPage titleKey={legalTitleKey} />
+          ) : isConseils ? (
+            <ConseilsPage slug={slug} />
+          ) : (
+            <main id="contenu">
+              <Hero />
+              <Reveal>
+                <About />
+              </Reveal>
+              <Reveal>
+                <Services />
+              </Reveal>
+              <Reveal>
+                <Gallery />
+              </Reveal>
+              <Reveal>
+                <Realisations />
+              </Reveal>
+              <Reveal>
+                <Pricing />
+              </Reveal>
+              <Reveal>
+                <GiftCards />
+              </Reveal>
+              <Reveal>
+                <Testimonials />
+              </Reveal>
+              <Reveal>
+                <Contact />
+              </Reveal>
+            </main>
+          )}
+        </motion.div>
+      </AnimatePresence>
       <Footer />
       <WhatsAppButton />
     </MotionConfig>

@@ -23,7 +23,6 @@ export default function Hero() {
         />
       ) : (
         <video
-          src="/videos/realisation-soin-vapeur.mp4"
           poster="/images/hero/hero-accueil.jpg"
           autoPlay
           muted
@@ -32,7 +31,10 @@ export default function Hero() {
           preload="metadata"
           aria-hidden="true"
           className="absolute inset-0 size-full object-cover"
-        />
+        >
+          <source src="/videos/realisation-soin-vapeur.webm" type="video/webm" />
+          <source src="/videos/realisation-soin-vapeur.mp4" type="video/mp4" />
+        </video>
       )}
       <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/55 to-ink/70" aria-hidden="true" />
 
