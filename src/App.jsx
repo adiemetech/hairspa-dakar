@@ -5,10 +5,12 @@ import About from './components/About'
 import AlertBanner from './components/AlertBanner'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Gallery from './components/Gallery'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import LegalPage from './components/LegalPage'
 import Pricing from './components/Pricing'
+import Realisations from './components/Realisations'
 import Reveal from './components/Reveal'
 import Services from './components/Services'
 import Testimonials from './components/Testimonials'
@@ -59,6 +61,12 @@ export default function App() {
           </Reveal>
           <Reveal>
             <Services />
+          </Reveal>
+          <Reveal>
+            <Gallery />
+          </Reveal>
+          <Reveal>
+            <Realisations />
           </Reveal>
           <Reveal>
             <Pricing />

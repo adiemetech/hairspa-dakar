@@ -1,19 +1,29 @@
-# Images HairSpa Dakar
+# Images & vidéos HairSpa Dakar
 
-Placeholders générés via placehold.co. Pour intégrer les images réelles :
-écraser les fichiers ci-dessous en conservant **exactement les mêmes noms** —
-aucune modification de code ne sera nécessaire.
+Médias réels du salon intégrés (photos Instagram compressées via `mozjpeg`,
+vidéos transcodées sans piste audio via ffmpeg). Pour remplacer un média :
+écraser le fichier en conservant **exactement le même nom** — aucune
+modification de code ne sera nécessaire.
 
-| Emplacement | Fichier attendu | Format conseillé |
+| Emplacement | Fichier | Usage |
 |---|---|---|
-| `hero/` | `hero-salon.jpg` | 1920×1080 (JPG/WebP, ≤ 300 Ko) |
-| `hero/` | `hero-salon-960.jpg` | 960×540 (variante mobile pour `srcset`) |
-| `services/` | `service-diagnostic.jpg` | 800×600 |
-| `services/` | `service-soin-profond.jpg` | 800×600 |
-| `services/` | `service-massage.jpg` | 800×600 |
-| `services/` | `service-tresses.jpg` | 800×600 |
-| `galerie/` | (avant/après, réalisations) | 1200×900, nommer `galerie-avant-apres-XX.jpg` |
-| `logo/` | `logo-hairspa.png` | **Logo officiel fourni** (fond blanc, intégré via `mix-blend-multiply`) — ne pas écraser |
+| `hero/` | `hero-accueil.jpg` | Fond du Hero (1920w) |
+| `hero/` | `hero-accueil-960.jpg` | Variante `srcset` 960w |
+| `equipe/` | `equipe-marpessa.jpg` | Section À Propos (frame vidéo du soin en cours) |
+| `services/` | `service-diagnostic.jpg` | Carte Diagnostic capillaire |
+| `services/` | `service-soin-vapeur.jpg` | Carte Soins profonds |
+| `services/` | `service-massage.jpg` | Carte Massages du cuir chevelu |
+| `services/` | `service-coiffure.jpg` | Carte Coiffures protectrices |
+| `galerie/` | `galerie-1.jpg` … `galerie-8.jpg` | Section Galerie (grille 2×4) |
+| `logo/` | `logo-hairspa.png` | **Logo officiel** (fond blanc, `mix-blend-multiply`) — ne pas écraser |
 
-Chaque usage d'image dans le code porte un commentaire
-`<!-- Remplacer par l'image réelle : nom_fichier -->` et un `alt` descriptif traduit.
+Vidéos (`public/videos/`, muettes, `muted loop autoPlay playsInline`) :
+
+| Fichier | Contenu |
+|---|---|
+| `realisation-soin-vapeur.mp4` | Soin profond à la vapeur au bac (720p, source conservée) |
+| `realisation-soin.mp4` | Application du soin (480p, re-encodé CRF 32) |
+| `realisation-equipe.mp4` | L'équipe dans le salon (480p, re-encodé CRF 32) |
+
+Chaque image porte un `alt` descriptif traduit (clés i18n `hero.imageAlt`,
+`services.imageAlts.*`, `about.imageAlt`, `gallery.imageAlts.*`).

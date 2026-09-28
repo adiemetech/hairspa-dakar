@@ -7,6 +7,8 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "gallery": "Gallery",
+    "realisations": "Our Work",
     "pricing": "Pricing",
     "testimonials": "Testimonials",
     "contact": "Contact",
@@ -85,6 +87,30 @@
       "massage": "Scalp massage during a washing ritual",
       "braids": "Protective style: braids without extensions"
     }
+  },
+  "gallery": {
+    "eyebrow": "Our portfolio",
+    "title": "Gallery of our work",
+    "imageAlts": {
+      "1": "Curly box braids with beads, side view",
+      "2": "Knotless braids with beads, back view",
+      "3": "Braided style with beads, front view",
+      "4": "Glossy straightened hair after treatment, back view",
+      "5": "Braided bun decorated with cowrie shells",
+      "6": "Cornrows created in the salon",
+      "7": "Braided bun with clean partings, top view",
+      "8": "Wavy cornrow pattern, back view"
+    }
+  },
+  "realisations": {
+    "eyebrow": "On video",
+    "title": "Our work on video",
+    "items": {
+      "steam": "Deep steam treatment at the wash basin",
+      "care": "Treatment applied by our specialist",
+      "team": "The HairSpa Dakar team in the salon"
+    },
+    "note": "Muted videos playing automatically."
   },
   "pricing": {
     "eyebrow": "Price list",

@@ -22,7 +22,7 @@ export default function Header() {
         </a>
 
         {/* Navigation desktop */}
-        <nav aria-label="Navigation principale" className="hidden lg:block">
+        <nav aria-label="Navigation principale" className="hidden xl:block">
           <ul className="flex items-center gap-6">
             {NAV_SECTIONS.map(({ id, labelKey }) => (
               <li key={id}>
@@ -47,7 +47,7 @@ export default function Header() {
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label={menuOpen ? t('nav.closeMenuAria') : t('nav.openMenuAria')}
-            className="flex size-10 items-center justify-center rounded-btn text-ink lg:hidden"
+            className="flex size-10 items-center justify-center rounded-btn text-ink xl:hidden"
           >
             {menuOpen ? <X className="size-6" /> : <Menu className="size-6" />}
           </button>
@@ -59,7 +59,7 @@ export default function Header() {
         <nav
           id="mobile-menu"
           aria-label="Navigation principale mobile"
-          className="border-t border-primary/20 bg-cream px-4 pb-4 lg:hidden"
+          className="border-t border-primary/20 bg-cream px-4 pb-4 xl:hidden"
         >
           <ul className="flex flex-col gap-1 pt-2">
             {NAV_SECTIONS.map(({ id, labelKey }) => (

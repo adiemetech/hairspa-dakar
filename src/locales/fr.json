@@ -7,6 +7,8 @@
     "home": "Accueil",
     "about": "À Propos",
     "services": "Services",
+    "gallery": "Galerie",
+    "realisations": "Réalisations",
     "pricing": "Tarifs",
     "testimonials": "Témoignages",
     "contact": "Contact",
@@ -85,6 +87,30 @@
       "massage": "Massage du cuir chevelu pendant un rituel de lavage",
       "braids": "Coiffure protectrice : braids sans rajouts"
     }
+  },
+  "gallery": {
+    "eyebrow": "Notre portfolio",
+    "title": "Galerie de nos réalisations",
+    "imageAlts": {
+      "1": "Box braids bouclés ornés de perles, vue de profil",
+      "2": "Tresses knotless ornées de perles, vue de dos",
+      "3": "Coiffure tressée avec perles, vue de face",
+      "4": "Cheveux lissés et brillants après soin, vue de dos",
+      "5": "Chignon tressé orné de cauris",
+      "6": "Tresses collées réalisées dans le salon",
+      "7": "Chignon tressé avec raies dessinées, vue de dessus",
+      "8": "Tresses collées au motif ondulé, vue de dos"
+    }
+  },
+  "realisations": {
+    "eyebrow": "En vidéo",
+    "title": "Réalisations en vidéo",
+    "items": {
+      "steam": "Soin profond à la vapeur au bac",
+      "care": "Application du soin par notre experte",
+      "team": "L'équipe HairSpa Dakar dans le salon"
+    },
+    "note": "Vidéos muettes en lecture automatique."
   },
   "pricing": {
     "eyebrow": "Grille tarifaire",

@@ -55,11 +55,12 @@ public/images/      # voir public/images/README.md pour le remplacement des imag
 - **Pages légales** routées par hash : `#mentions-legales`, `#politique-confidentialite`
   (contenu rédactionnel à fournir par le client).
 
-## Images
+## Images & vidéos
 
-Les placeholders de `public/images/` portent déjà les noms des futurs fichiers réels :
-déposez les photos du client par-dessus, **aucune modification de code nécessaire**.
-Détail des emplacements et formats conseillés : `public/images/README.md`.
+Médias réels du salon intégrés (photos compressées, vidéos muettes transcodées) :
+Hero, À Propos, cartes Services, Galerie (8 photos) et section Réalisations
+(3 vidéos). Pour remplacer un média, écraser le fichier du même nom —
+**aucune modification de code nécessaire**. Détail : `public/images/README.md`.
 Le logo officiel (`logo-hairspa.png`, fond blanc) est intégré via `mix-blend-multiply`
 dans le header ; optimisé sans perte (254 Ko).
 
@@ -79,6 +80,7 @@ dans le header ; optimisé sans perte (254 Ko).
 
 ## À recevoir du client (non bloquant)
 
-- Photos réelles (salon, soins, avant/après) → écraser les placeholders
+- Portrait de Marpessa (le lot reçu ne contenait pas de portrait dédié ; une frame
+  vidéo du soin en cours est utilisée en attendant) → écraser `equipe/equipe-marpessa.jpg`
 - Lien de réservation Addagio → remplacer le CTA WhatsApp
 - Textes définitifs des mentions légales et de la politique de confidentialité

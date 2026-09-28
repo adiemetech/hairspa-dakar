@@ -7,10 +7,9 @@ export default function Hero() {
 
   return (
     <section id="accueil" className="relative flex min-h-[92vh] items-center justify-center overflow-hidden">
-      {/* Remplacer par l'image réelle : hero-salon.jpg (déjà nommée ainsi) */}
       <img
-        src="/images/hero/hero-salon.jpg"
-        srcSet="/images/hero/hero-salon-960.jpg 960w, /images/hero/hero-salon.jpg 1920w"
+        src="/images/hero/hero-accueil.jpg"
+        srcSet="/images/hero/hero-accueil-960.jpg 960w, /images/hero/hero-accueil.jpg 1440w"
         sizes="100vw"
         alt={t('hero.imageAlt')}
         fetchPriority="high"

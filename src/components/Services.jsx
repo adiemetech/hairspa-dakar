@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next'
 
 const SERVICES = [
   { key: 'diagnostic', Icon: ClipboardCheck, image: 'service-diagnostic.jpg' },
-  { key: 'deep', Icon: Droplets, image: 'service-soin-profond.jpg' },
+  { key: 'deep', Icon: Droplets, image: 'service-soin-vapeur.jpg' },
   { key: 'massage', Icon: HandHeart, image: 'service-massage.jpg' },
-  { key: 'braids', Icon: ShieldCheck, image: 'service-tresses.jpg' },
+  { key: 'braids', Icon: ShieldCheck, image: 'service-coiffure.jpg' },
 ]
 
 function ServiceCard({ serviceKey, Icon, image }) {
@@ -13,7 +13,6 @@ function ServiceCard({ serviceKey, Icon, image }) {
 
   return (
     <article className="flex flex-col overflow-hidden rounded-card border border-primary/15 bg-white shadow-sm transition-shadow hover:shadow-md">
-      {/* Remplacer par l'image réelle : {image} (déjà nommée ainsi) */}
       <img
         src={`/images/services/${image}`}
         alt={t(`services.imageAlts.${serviceKey}`)}

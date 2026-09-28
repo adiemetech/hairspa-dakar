@@ -19,16 +19,25 @@ export default function About() {
         </h2>
 
         <div className="mt-10 grid items-center gap-10 lg:grid-cols-2">
+          <div className="overflow-hidden rounded-card shadow-sm">
+            <img
+              src="/images/equipe/equipe-marpessa.jpg"
+              alt={t('about.imageAlt')}
+              loading="lazy"
+              className="size-full object-cover"
+            />
+          </div>
+
           <div>
             <p className="text-lg leading-relaxed text-ink/80">{t('about.text')}</p>
             <p className="mt-4 leading-relaxed text-ink/70">{t('about.founder')}</p>
-          </div>
 
-          {/* Encart "Notre promesse" */}
-          <div className="rounded-card bg-gold-light p-8 shadow-sm">
-            <Quote className="size-8 text-gold" aria-hidden="true" />
-            <p className="mt-3 font-serif text-xl font-semibold text-ink">{t('about.promise.title')}</p>
-            <p className="mt-2 text-lg text-ink/80">{t('about.promise.text')}</p>
+            {/* Encart "Notre promesse" */}
+            <div className="mt-6 rounded-card bg-gold-light p-8 shadow-sm">
+              <Quote className="size-8 text-gold" aria-hidden="true" />
+              <p className="mt-3 font-serif text-xl font-semibold text-ink">{t('about.promise.title')}</p>
+              <p className="mt-2 text-lg text-ink/80">{t('about.promise.text')}</p>
+            </div>
           </div>
         </div>
 

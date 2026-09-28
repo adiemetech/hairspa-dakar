@@ -15,6 +15,8 @@ export const NAV_SECTIONS = [
   { id: 'accueil', labelKey: 'nav.home' },
   { id: 'a-propos', labelKey: 'nav.about' },
   { id: 'services', labelKey: 'nav.services' },
+  { id: 'galerie', labelKey: 'nav.gallery' },
+  { id: 'realisations', labelKey: 'nav.realisations' },
   { id: 'tarifs', labelKey: 'nav.pricing' },
   { id: 'temoignages', labelKey: 'nav.testimonials' },
   { id: 'contact', labelKey: 'nav.contact' },
