@@ -11,7 +11,7 @@ export default function Realisations() {
   const { t } = useTranslation()
 
   return (
-    <section id="realisations" className="scroll-mt-24 bg-ink px-4 py-20">
+    <section id="realisations" className="scroll-mt-24 bg-ink px-4 py-24">
       <div className="mx-auto max-w-6xl">
         <p className="text-center font-script text-3xl text-gold">{t('realisations.eyebrow')}</p>
         <h2 className="mt-2 text-center font-serif text-3xl font-semibold text-cream sm:text-4xl">

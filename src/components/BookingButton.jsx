@@ -1,20 +1,20 @@
 import { CalendarHeart } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-import { waLink } from '../constants'
+import { BOOKING_URL, waLink } from '../constants'
 
 const VARIANTS = {
   primary: 'bg-gold text-ink hover:bg-gold/85 shadow-md',
   outline: 'border-2 border-cream text-cream hover:bg-cream/10',
 }
 
-// CTA "Prendre Rendez-vous" → WhatsApp avec message pré-rempli (nouvel onglet).
-// Si un lien Addagio est fourni plus tard, remplacer waLink par cette URL.
+// CTA "Prendre Rendez-vous" : widget de réservation en ligne si BOOKING_URL est
+// renseigné (Planity / Treatwell / Calendly / Addagio), sinon WhatsApp pré-rempli.
 export default function BookingButton({ variant = 'primary', className = '' }) {
   const { t } = useTranslation()
 
   return (
     <a
-      href={waLink(t('whatsapp.message'))}
+      href={BOOKING_URL ?? waLink(t('whatsapp.message'))}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={t('cta.bookingAria')}

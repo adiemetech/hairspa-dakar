@@ -7,7 +7,7 @@ export default function Contact() {
   const { t } = useTranslation()
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-secondary-light/40 px-4 py-20">
+    <section id="contact" className="scroll-mt-24 bg-secondary-light/40 px-4 py-24">
       <div className="mx-auto max-w-6xl">
         <p className="text-center font-script text-3xl text-secondary">{t('contact.eyebrow')}</p>
         <h2 className="mt-2 text-center font-serif text-3xl font-semibold text-ink sm:text-4xl">

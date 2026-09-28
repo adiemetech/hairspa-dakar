@@ -73,7 +73,7 @@ export default function Pricing() {
   }
 
   return (
-    <section id="tarifs" className="scroll-mt-24 bg-white/60 px-4 py-20">
+    <section id="tarifs" className="scroll-mt-24 bg-white/60 px-4 py-24">
       <div className="mx-auto max-w-5xl">
         <p className="text-center font-script text-3xl text-secondary">{t('pricing.eyebrow')}</p>
         <h2 className="mt-2 text-center font-serif text-3xl font-semibold text-ink sm:text-4xl">

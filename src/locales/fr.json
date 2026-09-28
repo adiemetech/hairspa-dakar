@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "HairSpa Dakar – Centre de soins capillaires toutes textures à Dakar",
-    "description": "HairSpa Dakar, votre centre de soins capillaires à Sacré-Cœur 2. Spécialiste des cheveux naturels, crépus et bouclés. Diagnostic, soins profonds, coiffures protectrices. Prenez rendez-vous !"
+    "title": "HairSpa Dakar – Soins cheveux naturels & coiffures protectrices à Dakar",
+    "description": "HairSpa Dakar, centre de soins capillaires à Sacré-Cœur 2, Dakar : diagnostic, soins vapeur, massages du cuir chevelu, coiffures protectrices (braids, twists) pour cheveux naturels, crépus et bouclés. Ouvert 7j/7. Prenez rendez-vous !"
   },
   "nav": {
     "home": "Accueil",
@@ -9,6 +9,7 @@
     "services": "Services",
     "gallery": "Galerie",
     "realisations": "Réalisations",
+    "conseils": "Conseils",
     "pricing": "Tarifs",
     "testimonials": "Témoignages",
     "contact": "Contact",
@@ -91,6 +92,13 @@
   "gallery": {
     "eyebrow": "Notre portfolio",
     "title": "Galerie de nos réalisations",
+    "filterAria": "Filtrer la galerie par catégorie",
+    "filters": {
+      "all": "Tout voir",
+      "tresses": "Tresses & braids",
+      "chignons": "Chignons & attaches",
+      "soins": "Soins & lissages"
+    },
     "imageAlts": {
       "1": "Box braids bouclés ornés de perles, vue de profil",
       "2": "Tresses knotless ornées de perles, vue de dos",
@@ -111,6 +119,67 @@
       "team": "L'équipe HairSpa Dakar dans le salon"
     },
     "note": "Vidéos muettes en lecture automatique."
+  },
+  "gift": {
+    "eyebrow": "Pensez-y",
+    "title": "Cartes Cadeaux",
+    "text": "Offrez un moment de soin : la carte cadeau HairSpa Dakar est valable sur l'ensemble de nos prestations, en salon, sept jours sur sept.",
+    "steps": [
+      {
+        "title": "Choisissez la prestation",
+        "text": "Un soin vapeur, un head spa, une coiffure protectrice… ou un montant libre."
+      },
+      {
+        "title": "Recevez votre carte",
+        "text": "Nous préparons une carte personnalisée au nom de la bénéficiaire, imprimée ou par message."
+      },
+      {
+        "title": "Elle réserve son moment",
+        "text": "La bénéficiaire choisit son créneau au salon, à son rythme, quand elle le souhaite."
+      }
+    ],
+    "cta": "Offrir une carte cadeau",
+    "ctaAria": "Offrir une carte cadeau via WhatsApp (nouvel onglet)",
+    "message": "Bonjour, je souhaite offrir une carte cadeau HairSpa Dakar."
+  },
+  "conseils": {
+    "eyebrow": "Le blog du centre",
+    "title": "Conseils & routines capillaires",
+    "read": "Lire l'article",
+    "backToList": "Tous les conseils",
+    "backHome": "Retour à l'accueil",
+    "articles": {
+      "routine-cheveux-naturels": {
+        "title": "Démarrer une routine cheveux naturels",
+        "intro": "Les bases d'une routine simple et efficace pour cheveux crépus et bouclés.",
+        "paragraphs": [
+          "Observez d'abord votre cheveu : porosité, densité et niveau de sécheresse déterminent les produits adaptés. Un diagnostic en salon permet de fixer des objectifs réalistes de pousse et de volume.",
+          "Lavez sans agresser : un shampoing doux suivi d'un soin profond hydratant, une à deux fois par semaine, suffit dans la plupart des cas. Le démêlage se fait toujours sur cheveux humides, imprégnés d'après-shampoing.",
+          "Scellez l'hydratation avec une huile ou une crème leave-in, en insistant sur les pointes. La nuit, un bonnet ou un foulard en satin limite la casse et les frisottis.",
+          "Enfin, espacez les manipulations : moins vos cheveux sont touchés, moins ils cassent. Les coiffures protectrices sont vos meilleures alliées entre deux soins."
+        ]
+      },
+      "coiffures-protectrices": {
+        "title": "Coiffures protectrices : bien les choisir",
+        "intro": "Braids, twists, chignons : comment protéger ses cheveux sans les casser.",
+        "paragraphs": [
+          "Une coiffure protectrice limite les manipulations quotidiennes et préserve les pointes. Encore faut-il qu'elle soit posée sans tension excessive : une tresse qui tire au niveau du front ou des tempes provoquera des cassures.",
+          "Préparez vos cheveux avant la pose : shampoing, soin profond et démêlage soigneux. Des cheveux posés propres et hydratés tirent bien meilleur parti de la protection.",
+          "Ne serrez pas les rajouts et laissez respirer votre cuir chevelu : un massage léger aux huiles de croissance, une fois par semaine, entretient la circulation sans défaire la coiffure.",
+          "Gardez la coiffure six à huit semaines maximum, puis offrez à vos cheveux une pause hydratante avant la pose suivante."
+        ]
+      },
+      "entretenir-soin-vapeur": {
+        "title": "Prolonger les bienfaits d'un soin vapeur",
+        "intro": "Les gestes qui font durer l'hydratation entre deux rendez-vous.",
+        "paragraphs": [
+          "Le soin vapeur ouvre les écailles et fait pénétrer le soin en profondeur : c'est le moment le plus efficace de votre routine capillaire. Mais ses effets se cultivent aussi à la maison.",
+          "Dans les jours qui suivent, maintenez l'hydratation avec un leave-in léger, et un spray hydratant si vos pointes s'assèchent. Évitez les sources de chaleur directe non protégées.",
+          "Dormez sur du satin et attachez vos cheveux en ananas ou en tresses lâches pour réduire la friction nocturne.",
+          "Planifiez votre prochain rituel toutes les quatre à six semaines : la régularité compte davantage que l'intensité d'un soin isolé."
+        ]
+      }
+    }
   },
   "pricing": {
     "eyebrow": "Grille tarifaire",

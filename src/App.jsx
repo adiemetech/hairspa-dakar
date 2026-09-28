@@ -4,8 +4,10 @@ import { useTranslation } from 'react-i18next'
 import About from './components/About'
 import AlertBanner from './components/AlertBanner'
 import Contact from './components/Contact'
+import ConseilsPage from './components/ConseilsPage'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
+import GiftCards from './components/GiftCards'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import LegalPage from './components/LegalPage'
@@ -23,22 +25,48 @@ const LEGAL_ROUTES = {
   '#politique-confidentialite': 'legal.privacyTitle',
 }
 
+// Page Conseils (blog) : #conseils (liste) ou #conseils/<slug> (article)
+const conseilsSlug = (hash) =>
+  hash === '#conseils' ? '' : hash.startsWith('#conseils/') ? hash.slice('#conseils/'.length) : null
+
 export default function App() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   useSEO()
   const [hash, setHash] = useState(window.location.hash)
 
   useEffect(() => {
     const onHashChange = () => setHash(window.location.hash)
+    // Retour arrière/avant : le hash change, et la langue peut suivre l'URL (/fr/, /en/)
+    const onPopState = () => {
+      setHash(window.location.hash)
+      const segment = window.location.pathname.split('/')[1]
+      if ((segment === 'fr' || segment === 'en') && segment !== i18n.resolvedLanguage) {
+        i18n.changeLanguage(segment)
+      }
+    }
     window.addEventListener('hashchange', onHashChange)
-    return () => window.removeEventListener('hashchange', onHashChange)
-  }, [])
+    window.addEventListener('popstate', onPopState)
+    return () => {
+      window.removeEventListener('hashchange', onHashChange)
+      window.removeEventListener('popstate', onPopState)
+    }
+  }, [i18n])
 
   const legalTitleKey = LEGAL_ROUTES[hash]
+  const slug = conseilsSlug(hash)
+  const isConseils = slug !== null
+  const isSubPage = Boolean(legalTitleKey) || isConseils
 
   useEffect(() => {
-    if (legalTitleKey) window.scrollTo(0, 0)
-  }, [legalTitleKey])
+    if (isSubPage) {
+      window.scrollTo(0, 0)
+      return
+    }
+    // Retour sur l'accueil avec un hash : amener la section demandée à l'écran
+    if (hash) {
+      document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [hash, isSubPage])
 
   return (
     <MotionConfig reducedMotion="user">
@@ -53,6 +81,8 @@ export default function App() {
       <Header />
       {legalTitleKey ? (
         <LegalPage titleKey={legalTitleKey} />
+      ) : isConseils ? (
+        <ConseilsPage slug={slug} />
       ) : (
         <main id="contenu">
           <Hero />
@@ -70,6 +100,9 @@ export default function App() {
           </Reveal>
           <Reveal>
             <Pricing />
+          </Reveal>
+          <Reveal>
+            <GiftCards />
           </Reveal>
           <Reveal>
             <Testimonials />

@@ -32,9 +32,10 @@ npm run dev        # serveur de développement → http://localhost:5173
 
 ```
 src/
-├── components/     # Header, Hero, About, Services, Pricing, Testimonials,
-│                   # Contact, Footer, AlertBanner, BookingButton,
-│                   # LanguageSwitcher, WhatsAppButton, LegalPage, Reveal
+├── components/     # Header, Hero, About, Services, Gallery, Realisations,
+│                   # Pricing, GiftCards, Testimonials, Contact, Footer,
+│                   # AlertBanner, BookingButton, LanguageSwitcher,
+│                   # WhatsAppButton, LegalPage, ConseilsPage, Reveal
 ├── hooks/useSEO.js # title / description / Open Graph selon la langue active
 ├── locales/        # fr.json + en.json (tout le contenu du site, tarifs inclus)
 ├── i18n.js         # i18next : détection, localStorage ("hairspa-lang"), <html lang>
@@ -45,13 +46,20 @@ public/images/      # voir public/images/README.md pour le remplacement des imag
 
 ## Fonctionnalités clés
 
-- **Bilingue FR/EN** : sélecteur dans le header, changement instantané sans rechargement,
-  langue persistée en `localStorage`, métadonnées SEO et attribut `lang` synchronisés.
+- **Bilingue FR/EN** : URLs distinctes `/fr/` et `/en/` (rewrites Vercel), sélecteur dans
+  le header, changement instantané sans rechargement, langue persistée en `localStorage`,
+  métadonnées SEO, `canonical` et alternates `hreflang` synchronisés.
 - **Bandeau d'alerte anti-imitation** et badge **« Ouvert 7j/7 »** (exigences client).
 - **Grille tarifaire** en onglets accessibles (clavier : flèches gauche/droite).
-- **CTA rendez-vous** : WhatsApp avec message pré-rempli traduit. Si un lien de
-  réservation externe (Addagio) est fourni, remplacer `waLink(...)` dans
-  `src/components/BookingButton.jsx` par cette URL.
+- **Galerie filtrable** par catégorie (tresses, chignons, soins) avec animation Framer Motion.
+- **Page Conseils** (blog, 3 articles FR/EN) routée par hash : `#conseils`, `#conseils/<slug>`.
+- **Section Cartes Cadeaux** avec commande via WhatsApp.
+- **Hero vidéo** muette en boucle (poster image + fallback si `prefers-reduced-motion`).
+- **SEO local** : JSON-LD `LocalBusiness`/`BeautySalon` dans `index.html`, titres et
+  descriptions optimisés (« soins cheveux naturels Dakar », « coiffure protectrice Dakar »).
+- **CTA rendez-vous** : `BOOKING_URL` dans `src/constants.js` (null pour l'instant) —
+  renseigner l'URL du widget (Planity / Treatwell / Calendly / Addagio) pour remplacer
+  automatiquement le CTA WhatsApp pré-rempli.
 - **Pages légales** routées par hash : `#mentions-legales`, `#politique-confidentialite`
   (contenu rédactionnel à fournir par le client).
 

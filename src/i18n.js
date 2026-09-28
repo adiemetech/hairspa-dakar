@@ -15,7 +15,9 @@ i18n
     fallbackLng: 'fr',
     supportedLngs: ['fr', 'en'],
     detection: {
-      order: ['localStorage', 'navigator'],
+      // URL distinctes par langue : /fr/ et /en/ (premier segment du path),
+      // puis préférence mémorisée, puis langue du navigateur
+      order: ['path', 'localStorage', 'navigator'],
       caches: ['localStorage'],
       lookupLocalStorage: 'hairspa-lang',
     },

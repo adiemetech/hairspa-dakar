@@ -12,13 +12,15 @@ function ServiceCard({ serviceKey, Icon, image }) {
   const { t } = useTranslation()
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-card border border-primary/15 bg-white shadow-sm transition-shadow hover:shadow-md">
-      <img
-        src={`/images/services/${image}`}
-        alt={t(`services.imageAlts.${serviceKey}`)}
-        loading="lazy"
-        className="h-44 w-full object-cover"
-      />
+    <article className="group flex flex-col overflow-hidden rounded-card border border-primary/15 bg-white shadow-sm transition-shadow hover:shadow-md">
+      <div className="overflow-hidden">
+        <img
+          src={`/images/services/${image}`}
+          alt={t(`services.imageAlts.${serviceKey}`)}
+          loading="lazy"
+          className="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
       <div className="flex flex-1 flex-col p-6">
         <span className="flex size-12 items-center justify-center rounded-full bg-secondary-light">
           <Icon className="size-6 text-secondary-dark" aria-hidden="true" />
@@ -38,7 +40,7 @@ export default function Services() {
   const { t } = useTranslation()
 
   return (
-    <section id="services" className="scroll-mt-24 bg-primary-light/40 px-4 py-20">
+    <section id="services" className="scroll-mt-24 bg-primary-light/40 px-4 py-24">
       <div className="mx-auto max-w-6xl">
         <p className="text-center font-script text-3xl text-secondary">{t('services.eyebrow')}</p>
         <h2 className="mt-2 text-center font-serif text-3xl font-semibold text-ink sm:text-4xl">

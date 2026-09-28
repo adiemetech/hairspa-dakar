@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "HairSpa Dakar – Hair Care Center for All Textures in Dakar",
-    "description": "HairSpa Dakar, your hair care center in Sacré-Cœur 2. Specializing in natural, coily, and curly hair. Diagnosis, deep treatments, protective styles. Book now!"
+    "title": "HairSpa Dakar – Natural Hair Care & Protective Styles in Dakar",
+    "description": "HairSpa Dakar, hair care center in Sacré-Cœur 2, Dakar: diagnosis, steam treatments, scalp massages, protective braids and twists for natural, coily and curly hair. Open 7 days a week. Book your appointment!"
   },
   "nav": {
     "home": "Home",
@@ -9,6 +9,7 @@
     "services": "Services",
     "gallery": "Gallery",
     "realisations": "Our Work",
+    "conseils": "Tips",
     "pricing": "Pricing",
     "testimonials": "Testimonials",
     "contact": "Contact",
@@ -91,6 +92,13 @@
   "gallery": {
     "eyebrow": "Our portfolio",
     "title": "Gallery of our work",
+    "filterAria": "Filter the gallery by category",
+    "filters": {
+      "all": "View all",
+      "tresses": "Braids & twists",
+      "chignons": "Buns & updos",
+      "soins": "Treatments & straightening"
+    },
     "imageAlts": {
       "1": "Curly box braids with beads, side view",
       "2": "Knotless braids with beads, back view",
@@ -111,6 +119,67 @@
       "team": "The HairSpa Dakar team in the salon"
     },
     "note": "Muted videos playing automatically."
+  },
+  "gift": {
+    "eyebrow": "Give the gift of care",
+    "title": "Gift Cards",
+    "text": "Give a moment of care: the HairSpa Dakar gift card is valid for all our services, in the salon, seven days a week.",
+    "steps": [
+      {
+        "title": "Choose the service",
+        "text": "A steam treatment, a head spa, a protective style… or a free amount."
+      },
+      {
+        "title": "Receive your card",
+        "text": "We prepare a personalized card in the recipient's name, printed or by message."
+      },
+      {
+        "title": "They book their moment",
+        "text": "The recipient picks their slot at the salon, at their own pace, whenever they wish."
+      }
+    ],
+    "cta": "Give a gift card",
+    "ctaAria": "Give a gift card via WhatsApp (new tab)",
+    "message": "Hello, I would like to give a HairSpa Dakar gift card."
+  },
+  "conseils": {
+    "eyebrow": "From the center's blog",
+    "title": "Hair care tips & routines",
+    "read": "Read the article",
+    "backToList": "All tips",
+    "backHome": "Back to home",
+    "articles": {
+      "routine-cheveux-naturels": {
+        "title": "Starting a natural hair routine",
+        "intro": "The basics of a simple, effective routine for coily and curly hair.",
+        "paragraphs": [
+          "Start by observing your hair: porosity, density and dryness level determine the right products. An in-salon diagnosis helps set realistic growth and volume goals.",
+          "Wash gently: a mild shampoo followed by a hydrating deep treatment, once or twice a week, is enough in most cases. Detangling is always done on damp hair saturated with conditioner.",
+          "Seal in moisture with an oil or leave-in cream, focusing on the ends. At night, a satin bonnet or scarf limits breakage and frizz.",
+          "Finally, space out manipulation: the less your hair is handled, the less it breaks. Protective styles are your best allies between treatments."
+        ]
+      },
+      "coiffures-protectrices": {
+        "title": "Protective styles: choosing them well",
+        "intro": "Braids, twists, buns: how to protect your hair without breaking it.",
+        "paragraphs": [
+          "A protective style limits daily manipulation and preserves the ends. But it must be installed without excessive tension: a braid pulling at the hairline or temples will cause breakage.",
+          "Prepare your hair before installation: shampoo, deep treatment and careful detangling. Clean, moisturized hair gets far more benefit from the protection.",
+          "Do not tighten extensions and let your scalp breathe: a light massage with growth oils once a week keeps circulation going without undoing the style.",
+          "Keep the style for six to eight weeks maximum, then give your hair a moisturizing break before the next installation."
+        ]
+      },
+      "entretenir-soin-vapeur": {
+        "title": "Making the most of your steam treatment",
+        "intro": "Habits that keep the hydration going between appointments.",
+        "paragraphs": [
+          "Steam opens the cuticles and lets the treatment penetrate deeply: it is the most effective step of your hair routine. But its benefits are also maintained at home.",
+          "In the following days, keep moisture up with a light leave-in, plus a hydrating spray if your ends feel dry. Avoid unprotected direct heat.",
+          "Sleep on satin and tie your hair in a pineapple or loose braids to reduce night friction.",
+          "Book your next ritual every four to six weeks: consistency matters more than the intensity of a single treatment."
+        ]
+      }
+    }
   },
   "pricing": {
     "eyebrow": "Price list",

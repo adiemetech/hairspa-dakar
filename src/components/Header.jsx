@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -23,7 +24,7 @@ export default function Header() {
 
         {/* Navigation desktop */}
         <nav aria-label="Navigation principale" className="hidden xl:block">
-          <ul className="flex items-center gap-6">
+          <ul className="flex items-center gap-4 xl:gap-5">
             {NAV_SECTIONS.map(({ id, labelKey }) => (
               <li key={id}>
                 <a
@@ -54,31 +55,37 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Navigation mobile déroulante */}
-      {menuOpen && (
-        <nav
-          id="mobile-menu"
-          aria-label="Navigation principale mobile"
-          className="border-t border-primary/20 bg-cream px-4 pb-4 xl:hidden"
-        >
-          <ul className="flex flex-col gap-1 pt-2">
-            {NAV_SECTIONS.map(({ id, labelKey }) => (
-              <li key={id}>
-                <a
-                  href={`#${id}`}
-                  onClick={() => setMenuOpen(false)}
-                  className="block rounded-card px-3 py-2 font-medium text-ink/80 transition-colors hover:bg-primary-light"
-                >
-                  {t(labelKey)}
-                </a>
+      {/* Navigation mobile déroulante animée */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.nav
+            id="mobile-menu"
+            aria-label="Navigation principale mobile"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease: 'easeInOut' }}
+            className="overflow-hidden border-t border-primary/20 bg-cream px-4 xl:hidden"
+          >
+            <ul className="flex flex-col gap-1 py-4">
+              {NAV_SECTIONS.map(({ id, labelKey }) => (
+                <li key={id}>
+                  <a
+                    href={`#${id}`}
+                    onClick={() => setMenuOpen(false)}
+                    className="block rounded-card px-3 py-2 font-medium text-ink/80 transition-colors hover:bg-primary-light"
+                  >
+                    {t(labelKey)}
+                  </a>
+                </li>
+              ))}
+              <li className="pt-2">
+                <BookingButton className="w-full" />
               </li>
-            ))}
-            <li className="pt-2">
-              <BookingButton className="w-full" />
-            </li>
-          </ul>
-        </nav>
-      )}
+            </ul>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   )
 }

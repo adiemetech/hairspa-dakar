@@ -11,7 +11,7 @@ export default function About() {
   const { t } = useTranslation()
 
   return (
-    <section id="a-propos" className="scroll-mt-24 px-4 py-20">
+    <section id="a-propos" className="scroll-mt-24 px-4 py-24">
       <div className="mx-auto max-w-6xl">
         <p className="text-center font-script text-3xl text-secondary">{t('about.eyebrow')}</p>
         <h2 className="mt-2 text-center font-serif text-3xl font-semibold text-ink sm:text-4xl">

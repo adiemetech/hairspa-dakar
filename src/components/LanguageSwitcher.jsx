@@ -5,10 +5,17 @@ const LANGUAGES = [
   { code: 'en', short: 'EN', native: 'English' },
 ]
 
-// Sélecteur FR/EN sans drapeaux — la langue active est mise en évidence
+// Sélecteur FR/EN sans drapeaux — la langue active est mise en évidence.
+// La langue vit dans l'URL (/fr/ ou /en/) : le changement pousse une entrée d'historique.
 export default function LanguageSwitcher({ className = '' }) {
   const { i18n, t } = useTranslation()
   const current = i18n.resolvedLanguage?.startsWith('en') ? 'en' : 'fr'
+
+  const switchTo = (code) => {
+    if (code === current) return
+    window.history.pushState({}, '', `/${code}/${window.location.hash}`)
+    i18n.changeLanguage(code)
+  }
 
   return (
     <div
@@ -20,7 +27,7 @@ export default function LanguageSwitcher({ className = '' }) {
         <button
           key={code}
           type="button"
-          onClick={() => i18n.changeLanguage(code)}
+          onClick={() => switchTo(code)}
           aria-pressed={current === code}
           aria-label={native}
           title={native}
