@@ -1,6 +1,8 @@
+'use client'
+
 import { useEffect, useRef, useState } from 'react'
 import { VolumeX } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'next-intl'
 
 const VIDEOS = [
   { key: 'steam', file: 'realisation-soin-vapeur' },
@@ -13,7 +15,7 @@ const VIDEOS = [
 function LazyVideo({ file, label }) {
   const ref = useRef(null)
   const [reducedMotion] = useState(
-    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    () => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   )
 
   useEffect(() => {
@@ -38,6 +40,7 @@ function LazyVideo({ file, label }) {
 
   if (reducedMotion) {
     return (
+      // eslint-disable-next-line @next/next/no-img-element
       <img
         src={`/videos/${file}-poster.jpg`}
         alt={label}
@@ -65,7 +68,7 @@ function LazyVideo({ file, label }) {
 }
 
 export default function Realisations() {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <section id="realisations" className="scroll-mt-24 bg-ink px-4 py-24">

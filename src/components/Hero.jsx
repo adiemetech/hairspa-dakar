@@ -1,18 +1,22 @@
+'use client'
+
 import { Star } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { Link } from '@/i18n/navigation'
 import BookingButton from './BookingButton'
 
 export default function Hero() {
-  const { t } = useTranslation()
+  const t = useTranslations()
   // Fond vidéo muet en boucle ; image fixe si l'utilisateur préfère réduire les animations
   const [reducedMotion] = useState(
-    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    () => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   )
 
   return (
     <section id="accueil" className="relative flex min-h-[92vh] items-center justify-center overflow-hidden">
       {reducedMotion ? (
+        // eslint-disable-next-line @next/next/no-img-element
         <img
           src="/images/hero/hero-accueil.jpg"
           srcSet="/images/hero/hero-accueil-960.jpg 960w, /images/hero/hero-accueil.jpg 1440w"
@@ -49,12 +53,12 @@ export default function Hero() {
         <p className="mx-auto mt-5 max-w-xl text-lg text-cream/85">{t('hero.subtitle')}</p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <BookingButton className="w-full sm:w-auto" />
-          <a
-            href="#services"
+          <Link
+            href="/services"
             className="inline-flex w-full items-center justify-center rounded-btn border-2 border-cream px-5 py-2.5 font-semibold text-cream transition-colors hover:bg-cream/10 sm:w-auto"
           >
             {t('cta.discover')}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

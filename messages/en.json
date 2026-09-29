@@ -24,7 +24,10 @@
   "cta": {
     "booking": "Book an Appointment",
     "bookingAria": "Book an appointment via WhatsApp (new tab)",
-    "discover": "Discover our treatments"
+    "discover": "Discover our treatments",
+    "bandTitle": "Ready to reveal the beauty of your hair?",
+    "bandText": "Book your personalized diagnostic today and give your hair the care it deserves.",
+    "contact": "Contact us"
   },
   "alert": {
     "message": "Our only location is in Sacré-Cœur 2, opposite OBV restaurant. Beware of imitations."

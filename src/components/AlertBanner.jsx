@@ -1,9 +1,12 @@
-import { TriangleAlert } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
+'use client'
 
-// Bandeau d'avertissement anti-imitation — visible en haut de toutes les pages
+import { TriangleAlert } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+
+// Bandeau d'avertissement anti-imitation (exigence client).
+// Sera déplacé dans la page Contact à la Phase D, conformément au brief.
 export default function AlertBanner() {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <div role="alert" className="bg-ink px-4 py-2 text-center text-sm text-gold-light">

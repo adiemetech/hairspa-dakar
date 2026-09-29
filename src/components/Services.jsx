@@ -1,5 +1,7 @@
+'use client'
+
 import { ClipboardCheck, Droplets, HandHeart, Info, ShieldCheck } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'next-intl'
 
 const SERVICES = [
   { key: 'diagnostic', Icon: ClipboardCheck, image: 'service-diagnostic.jpg' },
@@ -9,11 +11,12 @@ const SERVICES = [
 ]
 
 function ServiceCard({ serviceKey, Icon, image }) {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-card border border-primary/15 bg-white shadow-sm transition-shadow hover:shadow-md">
       <div className="overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={`/images/services/${image}`}
           alt={t(`services.imageAlts.${serviceKey}`)}
@@ -37,7 +40,7 @@ function ServiceCard({ serviceKey, Icon, image }) {
 }
 
 export default function Services() {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <section id="services" className="scroll-mt-24 bg-primary-light/40 px-4 py-24">

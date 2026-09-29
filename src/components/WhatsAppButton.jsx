@@ -1,10 +1,12 @@
-import { MessageCircle } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import { waLink } from '../constants'
+'use client'
 
-// Bouton WhatsApp flottant — visible sur tout le site, en bas à droite
+import { MessageCircle } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { waLink } from '@/constants'
+
+// Bouton WhatsApp flottant — visible sur toutes les pages, en bas à droite
 export default function WhatsAppButton() {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <a

@@ -24,7 +24,10 @@
   "cta": {
     "booking": "Prendre Rendez-vous",
     "bookingAria": "Prendre rendez-vous via WhatsApp (nouvel onglet)",
-    "discover": "Découvrir nos soins"
+    "discover": "Découvrir nos soins",
+    "bandTitle": "Prête à révéler la beauté de vos cheveux ?",
+    "bandText": "Réservez votre diagnostic personnalisé dès aujourd'hui et offrez à vos cheveux le soin qu'ils méritent.",
+    "contact": "Nous contacter"
   },
   "alert": {
     "message": "Notre unique adresse est à Sacré-Cœur 2, en face du restaurant OBV. Méfiez-vous des imitations."

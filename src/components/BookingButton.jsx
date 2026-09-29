@@ -1,6 +1,8 @@
+'use client'
+
 import { CalendarHeart } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import { BOOKING_URL, waLink } from '../constants'
+import { useTranslations } from 'next-intl'
+import { BOOKING_URL, waLink } from '@/constants'
 
 const VARIANTS = {
   primary: 'bg-gold text-ink hover:bg-gold/85 shadow-md',
@@ -8,9 +10,9 @@ const VARIANTS = {
 }
 
 // CTA "Prendre Rendez-vous" : widget de réservation en ligne si BOOKING_URL est
-// renseigné (Planity / Treatwell / Calendly / Addagio), sinon WhatsApp pré-rempli.
+// renseigné (Planity / Treatwell / Calendly), sinon WhatsApp pré-rempli.
 export default function BookingButton({ variant = 'primary', className = '' }) {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <a

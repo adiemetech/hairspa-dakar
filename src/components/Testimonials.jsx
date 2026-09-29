@@ -1,7 +1,9 @@
+'use client'
+
 import { AnimatePresence, motion } from 'framer-motion'
 import { Star } from 'lucide-react'
+import { useMessages, useTranslations } from 'next-intl'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import CountUp from './CountUp'
 
 const AUTOPLAY_MS = 5000
@@ -42,11 +44,9 @@ function TrustBadges({ badges }) {
 }
 
 export default function Testimonials() {
-  const { t, i18n } = useTranslation()
-  const bundle = i18n.getResourceBundle(i18n.resolvedLanguage, 'translation')
-  const items = bundle.testimonials.items
-  const stats = bundle.testimonials.stats
-  const trust = bundle.testimonials.trust
+  const t = useTranslations()
+  const messages = useMessages()
+  const { items, stats, trust } = messages.testimonials
   const count = items.length
 
   const [index, setIndex] = useState(0)

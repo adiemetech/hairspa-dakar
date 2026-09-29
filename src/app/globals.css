@@ -22,10 +22,10 @@
   --color-gold: #c9a961;
   --color-gold-light: #f0e6cf;
 
-  /* Typographie */
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-script: "Great Vibes", cursive;
+  /* Typographie — polices servies par next/font (variables CSS injectées) */
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-script: var(--font-great-vibes), cursive;
 
   /* Coins arrondis généreux (cartes, boutons) */
   --radius-card: 1rem;

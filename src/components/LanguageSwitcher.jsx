@@ -1,4 +1,7 @@
-import { useTranslation } from 'react-i18next'
+'use client'
+
+import { useLocale, useTranslations } from 'next-intl'
+import { usePathname, useRouter } from '@/i18n/navigation'
 
 const LANGUAGES = [
   { code: 'fr', short: 'FR', native: 'Français' },
@@ -6,15 +9,16 @@ const LANGUAGES = [
 ]
 
 // Sélecteur FR/EN sans drapeaux — la langue active est mise en évidence.
-// La langue vit dans l'URL (/fr/ ou /en/) : le changement pousse une entrée d'historique.
+// La langue vit dans l'URL (/fr/… ou /en/…) : on navigue vers la même route dans l'autre locale.
 export default function LanguageSwitcher({ className = '' }) {
-  const { i18n, t } = useTranslation()
-  const current = i18n.resolvedLanguage?.startsWith('en') ? 'en' : 'fr'
+  const t = useTranslations()
+  const locale = useLocale()
+  const pathname = usePathname()
+  const router = useRouter()
 
   const switchTo = (code) => {
-    if (code === current) return
-    window.history.pushState({}, '', `/${code}/${window.location.hash}`)
-    i18n.changeLanguage(code)
+    if (code === locale) return
+    router.replace(pathname, { locale: code })
   }
 
   return (
@@ -28,13 +32,11 @@ export default function LanguageSwitcher({ className = '' }) {
           key={code}
           type="button"
           onClick={() => switchTo(code)}
-          aria-pressed={current === code}
+          aria-pressed={locale === code}
           aria-label={native}
           title={native}
           className={`rounded-btn px-3 py-1 text-sm font-semibold transition-colors ${
-            current === code
-              ? 'bg-ink text-cream'
-              : 'text-ink/60 hover:text-ink'
+            locale === code ? 'bg-ink text-cream' : 'text-ink/60 hover:text-ink'
           }`}
         >
           {short}

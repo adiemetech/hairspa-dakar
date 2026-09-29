@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useRef, useState } from 'react'
 
 // Compteur animé : démarre quand l'élément entre dans le viewport.

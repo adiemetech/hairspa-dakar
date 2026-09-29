@@ -1,6 +1,9 @@
+'use client'
+
 import { Clock, MapPin, Phone } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import { NAV_SECTIONS, PHONE_DISPLAY, SOCIAL_LINKS, waLink } from '../constants'
+import { useTranslations } from 'next-intl'
+import { NAV_SECTIONS, PHONE_DISPLAY, SOCIAL_LINKS, waLink } from '@/constants'
+import { Link } from '@/i18n/navigation'
 
 // lucide-react v1 ne fournit plus les icônes de marques → SVG inline
 function FacebookIcon(props) {
@@ -30,7 +33,7 @@ function TikTokIcon(props) {
 const SOCIAL_ICONS = { Facebook: FacebookIcon, Instagram: InstagramIcon, TikTok: TikTokIcon }
 
 export default function Footer() {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <footer className="bg-ink text-cream">
@@ -38,6 +41,7 @@ export default function Footer() {
         {/* Logo + slogan — conteneur blanc : le multiply ne fonctionnerait pas sur fond sombre */}
         <div>
           <span className="inline-block rounded-card bg-white p-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/logo/logo-hairspa.png"
               alt="HairSpa Dakar"
@@ -51,20 +55,20 @@ export default function Footer() {
         <nav aria-label={t('footer.quickLinks')}>
           <p className="font-serif text-lg text-gold">{t('footer.quickLinks')}</p>
           <ul className="mt-3 space-y-2">
-            {NAV_SECTIONS.map(({ id, labelKey }) => (
-              <li key={id}>
-                <a
-                  href={`#${id}`}
+            {NAV_SECTIONS.map(({ href, labelKey }) => (
+              <li key={href}>
+                <Link
+                  href={href}
                   className="text-sm text-cream/70 transition-colors hover:text-cream"
                 >
                   {t(labelKey)}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
 
-        {/* Horaires — badge 7j/7 (section 13 du brief) */}
+        {/* Horaires — badge 7j/7 (exigence client) */}
         <div>
           <p className="font-serif text-lg text-gold">{t('contact.hoursLabel')}</p>
           <span className="mt-3 inline-flex items-center gap-1.5 rounded-btn bg-secondary px-3 py-1 text-xs font-semibold text-white">
@@ -117,17 +121,17 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Barre basse : copyright + pages légales (câblées en Phase 5) */}
+      {/* Barre basse : copyright + pages légales */}
       <div className="border-t border-cream/15">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-4 text-xs text-cream/60 sm:flex-row">
           <p>{t('footer.rights')}</p>
           <p className="flex gap-4">
-            <a href="#mentions-legales" className="transition-colors hover:text-cream">
+            <Link href="/mentions-legales" className="transition-colors hover:text-cream">
               {t('footer.legal')}
-            </a>
-            <a href="#politique-confidentialite" className="transition-colors hover:text-cream">
+            </Link>
+            <Link href="/politique-confidentialite" className="transition-colors hover:text-cream">
               {t('footer.privacy')}
-            </a>
+            </Link>
           </p>
         </div>
       </div>

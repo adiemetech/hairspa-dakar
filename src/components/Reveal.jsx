@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 
 // Apparition douce au scroll (fade-in + slide-up), une seule fois.
