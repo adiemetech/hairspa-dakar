@@ -1,12 +1,14 @@
+'use client'
+
 import { Gift, HeartHandshake, Sparkles } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import { waLink } from '../constants'
+import { useTranslations } from 'next-intl'
+import { waLink } from '@/constants'
 
 const STEP_ICONS = [Gift, Sparkles, HeartHandshake]
 
 export default function GiftCards() {
-  const { t } = useTranslation()
-  const steps = t('gift.steps', { returnObjects: true })
+  const t = useTranslations()
+  const steps = t.raw('gift.steps')
 
   return (
     <section id="cartes-cadeaux" className="scroll-mt-24 bg-gold-light/60 px-4 py-24">

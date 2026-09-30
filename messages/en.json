@@ -1,7 +1,25 @@
 {
   "seo": {
     "title": "HairSpa Dakar – Natural Hair Care & Protective Styles in Dakar",
-    "description": "HairSpa Dakar, hair care center in Sacré-Cœur 2, Dakar: diagnosis, steam treatments, scalp massages, protective braids and twists for natural, coily and curly hair. Open 7 days a week. Book your appointment!"
+    "description": "HairSpa Dakar, hair care center in Sacré-Cœur 2, Dakar: diagnosis, steam treatments, scalp massages, protective braids and twists for natural, coily and curly hair. Open 7 days a week. Book your appointment!",
+    "pages": {
+      "about": {
+        "title": "About HairSpa Dakar",
+        "description": "Discover HairSpa Dakar, a hair care center in Sacré-Cœur 2: our philosophy, our expertise with natural, coily and curly hair, and our promise of gentleness."
+      },
+      "services": {
+        "title": "Our Hair Treatments in Dakar",
+        "description": "Hair diagnosis, deep steam treatments, scalp massages and protective styles (braids, twists) for natural hair in Dakar. Discover our services."
+      },
+      "realisations": {
+        "title": "Our Work & Gallery – HairSpa Dakar",
+        "description": "Photo and video gallery of our work: protective styles, braids, updos and steam treatments for natural hair in Dakar."
+      },
+      "tarifs": {
+        "title": "Pricing & Services – HairSpa Dakar",
+        "description": "HairSpa Dakar price list: treatments, cuts, protective styles, Head Spa and packages. Gift cards available. Sacré-Cœur 2, Dakar."
+      }
+    }
   },
   "nav": {
     "home": "Home",
@@ -362,7 +380,8 @@
     "message": "Hello, I would like to book an appointment for a hair treatment."
   },
   "a11y": {
-    "skipToContent": "Skip to main content"
+    "skipToContent": "Skip to main content",
+    "breadcrumb": "Breadcrumb"
   },
   "legal": {
     "title": "Legal notice",

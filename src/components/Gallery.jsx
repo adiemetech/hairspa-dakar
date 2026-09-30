@@ -1,6 +1,8 @@
+'use client'
+
 import { AnimatePresence, motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
 
 const PHOTOS = [
   { file: 'galerie-1.jpg', cat: 'tresses' },
@@ -16,7 +18,7 @@ const PHOTOS = [
 const FILTERS = ['all', 'tresses', 'chignons', 'soins']
 
 export default function Gallery() {
-  const { t } = useTranslation()
+  const t = useTranslations()
   const [filter, setFilter] = useState('all')
 
   const photos = PHOTOS.map((photo, index) => ({ ...photo, altKey: index + 1 })).filter(

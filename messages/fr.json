@@ -1,7 +1,25 @@
 {
   "seo": {
     "title": "HairSpa Dakar – Soins cheveux naturels & coiffures protectrices à Dakar",
-    "description": "HairSpa Dakar, centre de soins capillaires à Sacré-Cœur 2, Dakar : diagnostic, soins vapeur, massages du cuir chevelu, coiffures protectrices (braids, twists) pour cheveux naturels, crépus et bouclés. Ouvert 7j/7. Prenez rendez-vous !"
+    "description": "HairSpa Dakar, centre de soins capillaires à Sacré-Cœur 2, Dakar : diagnostic, soins vapeur, massages du cuir chevelu, coiffures protectrices (braids, twists) pour cheveux naturels, crépus et bouclés. Ouvert 7j/7. Prenez rendez-vous !",
+    "pages": {
+      "about": {
+        "title": "À propos de HairSpa Dakar",
+        "description": "Découvrez HairSpa Dakar, centre de soins capillaires à Sacré-Cœur 2 : notre philosophie, notre expertise des cheveux naturels, crépus et bouclés, et notre promesse de douceur."
+      },
+      "services": {
+        "title": "Nos soins capillaires à Dakar",
+        "description": "Diagnostic capillaire, soins profonds vapeur, massages du cuir chevelu et coiffures protectrices (braids, twists) pour cheveux naturels à Dakar. Découvrez nos prestations."
+      },
+      "realisations": {
+        "title": "Réalisations & galerie HairSpa Dakar",
+        "description": "Galerie photos et vidéos de nos réalisations : coiffures protectrices, tresses, chignons et soins vapeur pour cheveux naturels à Dakar."
+      },
+      "tarifs": {
+        "title": "Tarifs & prestations HairSpa Dakar",
+        "description": "Grille tarifaire HairSpa Dakar : soins, coupes, coiffures protectrices, Head Spa et forfaits. Cartes cadeaux disponibles. Sacré-Cœur 2, Dakar."
+      }
+    }
   },
   "nav": {
     "home": "Accueil",
@@ -362,7 +380,8 @@
     "message": "Bonjour, je souhaite prendre rendez-vous pour un soin capillaire."
   },
   "a11y": {
-    "skipToContent": "Aller au contenu principal"
+    "skipToContent": "Aller au contenu principal",
+    "breadcrumb": "Fil d'Ariane"
   },
   "legal": {
     "title": "Mentions légales",

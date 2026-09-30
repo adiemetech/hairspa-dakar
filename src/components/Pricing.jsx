@@ -1,6 +1,8 @@
+'use client'
+
 import { Check, Crown, Info } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { useRef, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 
 const TABS = ['soins', 'coupes', 'coiffures', 'headspa', 'forfaits']
 
@@ -18,7 +20,7 @@ function PriceRow({ label, detail, price }) {
 }
 
 function HeadSpaPanel() {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <div>
@@ -39,7 +41,7 @@ function HeadSpaPanel() {
               {t(`pricing.headspa.${formula}.price`)}
             </p>
             <ul className="mt-5 space-y-2.5">
-              {t(`pricing.headspa.${formula}.includes`, { returnObjects: true }).map((item) => (
+              {t.raw(`pricing.headspa.${formula}.includes`).map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-ink/80">
                   <Check className="mt-0.5 size-4 shrink-0 text-secondary-dark" aria-hidden="true" />
                   {item}
@@ -58,7 +60,7 @@ function HeadSpaPanel() {
 }
 
 export default function Pricing() {
-  const { t } = useTranslation()
+  const t = useTranslations()
   const [active, setActive] = useState('soins')
   const tabRefs = useRef([])
 
@@ -119,7 +121,7 @@ export default function Pricing() {
               hidden={active !== tab}
             >
               <ul className={tab === 'coiffures' ? 'sm:columns-2 sm:gap-12' : 'mx-auto max-w-2xl'}>
-                {t(`pricing.lists.${tab}`, { returnObjects: true }).map(({ label, detail, price }) => (
+                {t.raw(`pricing.lists.${tab}`).map(({ label, detail, price }) => (
                   <PriceRow key={label} label={label} detail={detail} price={price} />
                 ))}
               </ul>
@@ -138,7 +140,7 @@ export default function Pricing() {
 
         {/* Notes importantes */}
         <div className="mt-12 space-y-3 rounded-card border border-gold/40 bg-gold-light/50 p-6">
-          {t('pricing.notes', { returnObjects: true }).map((note) => (
+          {t.raw('pricing.notes').map((note) => (
             <p key={note} className="flex items-start gap-2 text-sm text-ink/75">
               <Info className="mt-0.5 size-4 shrink-0 text-secondary-dark" aria-hidden="true" />
               {note}

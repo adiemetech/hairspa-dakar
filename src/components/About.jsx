@@ -1,5 +1,7 @@
+'use client'
+
 import { Home, Quote, ShieldCheck, Sparkles } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'next-intl'
 
 const PILLARS = [
   { key: 'salon', Icon: Sparkles },
@@ -8,7 +10,7 @@ const PILLARS = [
 ]
 
 export default function About() {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <section id="a-propos" className="scroll-mt-24 px-4 py-24">
