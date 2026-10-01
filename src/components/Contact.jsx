@@ -1,10 +1,12 @@
-import { Clock, Languages, MapPin, Phone } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import { PHONE_DISPLAY, waLink } from '../constants'
-import BookingButton from './BookingButton'
+'use client'
+
+import { AlertTriangle, Clock, Languages, MapPin, MessageCircle, Phone } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import ContactForm from '@/components/ContactForm'
+import { ADDRESS_QUERY, PHONE_DISPLAY, WHATSAPP_NUMBER, waLink } from '@/constants'
 
 export default function Contact() {
-  const { t } = useTranslation()
+  const t = useTranslations()
 
   return (
     <section id="contact" className="scroll-mt-24 bg-secondary-light/40 px-4 py-24">
@@ -15,7 +17,7 @@ export default function Contact() {
         </h2>
 
         <div className="mt-12 grid gap-10 lg:grid-cols-2">
-          {/* Coordonnées */}
+          {/* Colonne gauche : coordonnées + encart anti-imitation + WhatsApp direct */}
           <div className="space-y-6">
             <div className="flex items-start gap-3">
               <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary-light">
@@ -34,7 +36,10 @@ export default function Contact() {
               <div>
                 <p className="font-semibold text-ink">{t('contact.phoneLabel')}</p>
                 <p className="flex flex-wrap gap-x-4">
-                  <a href={`tel:+${PHONE_DISPLAY.replace(/\s/g, '')}`} className="text-ink/75 hover:text-secondary-dark">
+                  <a
+                    href={`tel:+${WHATSAPP_NUMBER}`}
+                    className="text-ink/75 hover:text-secondary-dark"
+                  >
                     {PHONE_DISPLAY}
                   </a>
                   <a
@@ -60,7 +65,7 @@ export default function Contact() {
                     {t('hours.badge')}
                   </span>
                 </p>
-                <p className="text-ink/75">{t('hours.short')}</p>
+                <p className="text-ink/75">{t('contact.hours')}</p>
               </div>
             </div>
 
@@ -74,17 +79,43 @@ export default function Contact() {
               </div>
             </div>
 
-            <BookingButton className="w-full sm:w-auto" />
+            {/* Encart anti-imitation (exigence client) */}
+            <div className="flex items-start gap-3 rounded-card border border-secondary/30 bg-white p-5 shadow-sm">
+              <AlertTriangle className="mt-0.5 size-6 shrink-0 text-secondary" aria-hidden="true" />
+              <div>
+                <p className="font-serif text-lg font-semibold text-ink">{t('contact.warning.title')}</p>
+                <p className="mt-1 text-sm leading-relaxed text-ink/70">{t('contact.warning.text')}</p>
+              </div>
+            </div>
+
+            <a
+              href={waLink(t('whatsapp.message'))}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-btn bg-[#128C4B] px-6 py-3 font-semibold text-white shadow-md transition-colors hover:brightness-95 sm:w-auto"
+            >
+              <MessageCircle className="size-5" aria-hidden="true" />
+              {t('contact.directWhatsapp')}
+            </a>
+
+            {/* Carte Google Maps — Sacré-Cœur 2, en face du restaurant OBV */}
+            <iframe
+              title={t('contact.mapTitle')}
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS_QUERY)}&z=16&output=embed`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="min-h-[320px] w-full rounded-card border-0 shadow-sm"
+            />
           </div>
 
-          {/* Carte Google Maps — Sacré-Cœur 2, en face du restaurant OBV */}
-          <iframe
-            title={t('contact.mapTitle')}
-            src="https://maps.google.com/maps?q=Sacr%C3%A9-C%C5%93ur%202%2C%20Dakar%20(en%20face%20du%20restaurant%20OBV)&z=16&output=embed"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="min-h-[360px] w-full rounded-card border-0 shadow-sm"
-          />
+          {/* Colonne droite : formulaire */}
+          <div className="rounded-card border border-primary/15 bg-white p-6 shadow-sm sm:p-8">
+            <h3 className="font-serif text-2xl font-semibold text-ink">{t('contact.form.title')}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-ink/70">{t('contact.form.subtitle')}</p>
+            <div className="mt-6">
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 
 import { Clock, MapPin, Phone } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { NAV_SECTIONS, PHONE_DISPLAY, SOCIAL_LINKS, waLink } from '@/constants'
+import { NAV_SECTIONS, PHONE_DISPLAY, SOCIAL_LINKS, WHATSAPP_NUMBER, waLink } from '@/constants'
 import { Link } from '@/i18n/navigation'
 
 // lucide-react v1 ne fournit plus les icônes de marques → SVG inline
@@ -65,6 +65,14 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/rendez-vous"
+                className="text-sm text-cream/70 transition-colors hover:text-cream"
+              >
+                {t('nav.rendezvous')}
+              </Link>
+            </li>
           </ul>
         </nav>
 
@@ -81,7 +89,7 @@ export default function Footer() {
             {t('contact.address')}
           </p>
           <a
-            href={`tel:+${PHONE_DISPLAY.replace(/\s/g, '')}`}
+            href={`tel:+${WHATSAPP_NUMBER}`}
             className="mt-2 flex items-center gap-2 text-sm text-cream/70 transition-colors hover:text-cream"
           >
             <Phone className="size-4 shrink-0 text-primary" aria-hidden="true" />

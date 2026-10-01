@@ -30,6 +30,14 @@
       "privacy": {
         "title": "Politique de confidentialité – HairSpa Dakar",
         "description": "Politique de confidentialité du site HairSpa Dakar : collecte et usage des données personnelles."
+      },
+      "contact": {
+        "title": "Contact – HairSpa Dakar",
+        "description": "Contactez HairSpa Dakar à Sacré-Cœur 2, Dakar : formulaire, téléphone, WhatsApp, plan d'accès et horaires. Ouvert 7j/7 de 10h à 19h."
+      },
+      "rendezvous": {
+        "title": "Prendre rendez-vous – HairSpa Dakar",
+        "description": "Réservez votre soin capillaire chez HairSpa Dakar à Sacré-Cœur 2, Dakar : prise de rendez-vous en ligne ou via WhatsApp. Ouvert 7j/7."
       }
     }
   },
@@ -43,6 +51,7 @@
     "pricing": "Tarifs",
     "testimonials": "Témoignages",
     "contact": "Contact",
+    "rendezvous": "Rendez-vous",
     "openMenuAria": "Ouvrir le menu de navigation",
     "closeMenuAria": "Fermer le menu de navigation",
     "languageAria": "Choisir la langue"
@@ -174,6 +183,31 @@
     "cta": "Offrir une carte cadeau",
     "ctaAria": "Offrir une carte cadeau via WhatsApp (nouvel onglet)",
     "message": "Bonjour, je souhaite offrir une carte cadeau HairSpa Dakar."
+  },
+  "booking": {
+    "eyebrow": "Réservation",
+    "title": "Prendre rendez-vous",
+    "intro": "Choisissez le créneau qui vous convient et offrez à vos cheveux un moment de soin. Nous vous confirmons rapidement par WhatsApp.",
+    "stepsTitle": "Comment ça marche ?",
+    "steps": [
+      {
+        "title": "Écrivez-nous",
+        "text": "Via le bouton de réservation ou directement sur WhatsApp, en précisant la prestation souhaitée."
+      },
+      {
+        "title": "Choisissez votre créneau",
+        "text": "Nous vous proposons les disponibilités de la semaine, du lundi au dimanche, de 10h à 19h."
+      },
+      {
+        "title": "Confirmez et détendez-vous",
+        "text": "Votre rendez-vous est confirmé. Présentez-vous à Sacré-Cœur 2, en face du restaurant OBV."
+      }
+    ],
+    "cta": "Réserver sur WhatsApp",
+    "ctaAria": "Réserver un soin via WhatsApp (nouvel onglet)",
+    "onlineTitle": "Réservation en ligne",
+    "onlineSoon": "La réservation en ligne arrive bientôt. En attendant, réservez directement par WhatsApp : nous répondons 7j/7.",
+    "hoursReminder": "Ouvert 7j/7 — Lundi au dimanche : 10h00 – 19h00"
   },
   "conseils": {
     "eyebrow": "Le blog du centre",
@@ -377,7 +411,45 @@
     "hours": "Lundi au dimanche, 10h00 – 19h00",
     "languagesLabel": "Langues parlées",
     "languages": "Wolof / Français / Anglais",
-    "mapTitle": "Carte : HairSpa Dakar, Sacré-Cœur 2"
+    "mapTitle": "Carte : HairSpa Dakar, Sacré-Cœur 2",
+    "form": {
+      "title": "Écrivez-nous",
+      "subtitle": "Une question, une réservation ? Envoyez-nous un message, nous vous répondons rapidement.",
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom et prénom",
+      "email": "Email",
+      "emailPlaceholder": "vous@exemple.com",
+      "phone": "Téléphone / WhatsApp",
+      "phonePlaceholder": "+221 7X XXX XX XX (facultatif)",
+      "service": "Type de prestation",
+      "servicePlaceholder": "Choisir une prestation",
+      "services": {
+        "soin": "Soin capillaire",
+        "coiffure": "Coiffure protectrice",
+        "diagnostic": "Diagnostic capillaire",
+        "headspa": "Head Spa",
+        "autre": "Autre"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre besoin, vos disponibilités…",
+      "consent": "J'accepte que mes données soient utilisées pour répondre à ma demande (voir la politique de confidentialité).",
+      "submit": "Envoyer",
+      "sending": "Envoi en cours…",
+      "success": "Merci ! Nous vous répondrons dans les plus brefs délais.",
+      "error": "Une erreur est survenue. Veuillez réessayer ou nous écrire sur WhatsApp.",
+      "errors": {
+        "nameRequired": "Veuillez indiquer votre nom.",
+        "emailRequired": "Veuillez indiquer votre email.",
+        "emailInvalid": "Veuillez saisir une adresse email valide.",
+        "messageRequired": "Veuillez écrire un message.",
+        "consentRequired": "Vous devez accepter pour pouvoir envoyer."
+      }
+    },
+    "warning": {
+      "title": "Attention aux imitations",
+      "text": "Notre unique adresse est à Sacré-Cœur 2, en face du restaurant OBV, Dakar. HairSpa Dakar n'a aucune autre succursale : méfiez-vous des imitations."
+    },
+    "directWhatsapp": "Écrire directement sur WhatsApp"
   },
   "footer": {
     "slogan": "Votre centre de soins capillaires toutes textures de cheveux à Dakar ! Expertise et résultats.",

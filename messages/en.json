@@ -30,6 +30,14 @@
       "privacy": {
         "title": "Privacy Policy – HairSpa Dakar",
         "description": "Privacy policy for the HairSpa Dakar website: collection and use of personal data."
+      },
+      "contact": {
+        "title": "Contact – HairSpa Dakar",
+        "description": "Contact HairSpa Dakar in Sacré-Cœur 2, Dakar: form, phone, WhatsApp, map and opening hours. Open 7 days a week, 10 AM to 7 PM."
+      },
+      "rendezvous": {
+        "title": "Book an Appointment – HairSpa Dakar",
+        "description": "Book your hair treatment at HairSpa Dakar in Sacré-Cœur 2, Dakar: online booking or via WhatsApp. Open 7 days a week."
       }
     }
   },
@@ -43,6 +51,7 @@
     "pricing": "Pricing",
     "testimonials": "Testimonials",
     "contact": "Contact",
+    "rendezvous": "Appointment",
     "openMenuAria": "Open navigation menu",
     "closeMenuAria": "Close navigation menu",
     "languageAria": "Choose language"
@@ -174,6 +183,31 @@
     "cta": "Give a gift card",
     "ctaAria": "Give a gift card via WhatsApp (new tab)",
     "message": "Hello, I would like to give a HairSpa Dakar gift card."
+  },
+  "booking": {
+    "eyebrow": "Booking",
+    "title": "Book an appointment",
+    "intro": "Pick the time that suits you and treat your hair to a moment of care. We'll confirm quickly on WhatsApp.",
+    "stepsTitle": "How it works",
+    "steps": [
+      {
+        "title": "Write to us",
+        "text": "Via the booking button or directly on WhatsApp, telling us the service you'd like."
+      },
+      {
+        "title": "Choose your slot",
+        "text": "We'll suggest this week's availability, Monday to Sunday, from 10 AM to 7 PM."
+      },
+      {
+        "title": "Confirm and relax",
+        "text": "Your appointment is confirmed. Come to Sacré-Cœur 2, opposite the OBV restaurant."
+      }
+    ],
+    "cta": "Book on WhatsApp",
+    "ctaAria": "Book a treatment via WhatsApp (new tab)",
+    "onlineTitle": "Online booking",
+    "onlineSoon": "Online booking is coming soon. In the meantime, book directly on WhatsApp: we reply 7 days a week.",
+    "hoursReminder": "Open 7 days a week — Monday to Sunday: 10:00 AM – 7:00 PM"
   },
   "conseils": {
     "eyebrow": "From the center's blog",
@@ -377,7 +411,45 @@
     "hours": "Monday to Sunday, 10:00 AM – 7:00 PM",
     "languagesLabel": "Languages spoken",
     "languages": "Wolof / French / English",
-    "mapTitle": "Map: HairSpa Dakar, Sacré-Cœur 2"
+    "mapTitle": "Map: HairSpa Dakar, Sacré-Cœur 2",
+    "form": {
+      "title": "Write to us",
+      "subtitle": "A question or a booking? Send us a message and we'll get back to you quickly.",
+      "name": "Full name",
+      "namePlaceholder": "Your first and last name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone / WhatsApp",
+      "phonePlaceholder": "+221 7X XXX XX XX (optional)",
+      "service": "Type of service",
+      "servicePlaceholder": "Choose a service",
+      "services": {
+        "soin": "Hair treatment",
+        "coiffure": "Protective style",
+        "diagnostic": "Hair diagnostic",
+        "headspa": "Head Spa",
+        "autre": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Describe your needs, your availability…",
+      "consent": "I agree that my data may be used to respond to my request (see privacy policy).",
+      "submit": "Send",
+      "sending": "Sending…",
+      "success": "Thank you! We'll get back to you as soon as possible.",
+      "error": "Something went wrong. Please try again or message us on WhatsApp.",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "emailRequired": "Please enter your email.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageRequired": "Please write a message.",
+        "consentRequired": "You must agree before sending."
+      }
+    },
+    "warning": {
+      "title": "Beware of imitations",
+      "text": "Our only address is in Sacré-Cœur 2, opposite the OBV restaurant, Dakar. HairSpa Dakar has no other branch: beware of imitations."
+    },
+    "directWhatsapp": "Message us directly on WhatsApp"
   },
   "footer": {
     "slogan": "Your hair care center for all hair textures in Dakar! Expertise and results.",
