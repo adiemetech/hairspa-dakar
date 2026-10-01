@@ -18,6 +18,18 @@
       "tarifs": {
         "title": "Pricing & Services – HairSpa Dakar",
         "description": "HairSpa Dakar price list: treatments, cuts, protective styles, Head Spa and packages. Gift cards available. Sacré-Cœur 2, Dakar."
+      },
+      "conseils": {
+        "title": "Hair Care Tips & Routines – HairSpa Dakar",
+        "description": "The HairSpa Dakar blog: caring for coily and natural hair in Dakar, protective styles, and the benefits of steam treatments. Expert advice."
+      },
+      "legal": {
+        "title": "Legal Notice – HairSpa Dakar",
+        "description": "Legal notice for the HairSpa Dakar website, hair care center in Sacré-Cœur 2, Dakar."
+      },
+      "privacy": {
+        "title": "Privacy Policy – HairSpa Dakar",
+        "description": "Privacy policy for the HairSpa Dakar website: collection and use of personal data."
       }
     }
   },
@@ -382,6 +394,12 @@
   "a11y": {
     "skipToContent": "Skip to main content",
     "breadcrumb": "Breadcrumb"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Oops, this page floated away",
+    "text": "The page you're looking for doesn't exist or has been moved. Breathe — we'll take you back home.",
+    "backHome": "Back to home"
   },
   "legal": {
     "title": "Legal notice",

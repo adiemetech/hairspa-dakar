@@ -18,6 +18,18 @@
       "tarifs": {
         "title": "Tarifs & prestations HairSpa Dakar",
         "description": "Grille tarifaire HairSpa Dakar : soins, coupes, coiffures protectrices, Head Spa et forfaits. Cartes cadeaux disponibles. Sacré-Cœur 2, Dakar."
+      },
+      "conseils": {
+        "title": "Conseils & routines capillaires – HairSpa Dakar",
+        "description": "Le blog HairSpa Dakar : entretien des cheveux crépus et naturels à Dakar, coiffures protectrices, bienfaits du soin vapeur. Conseils d'expertes."
+      },
+      "legal": {
+        "title": "Mentions légales – HairSpa Dakar",
+        "description": "Mentions légales du site HairSpa Dakar, centre de soins capillaires à Sacré-Cœur 2, Dakar."
+      },
+      "privacy": {
+        "title": "Politique de confidentialité – HairSpa Dakar",
+        "description": "Politique de confidentialité du site HairSpa Dakar : collecte et usage des données personnelles."
       }
     }
   },
@@ -382,6 +394,12 @@
   "a11y": {
     "skipToContent": "Aller au contenu principal",
     "breadcrumb": "Fil d'Ariane"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Oups, cette page s'est envolée",
+    "text": "La page que vous cherchez n'existe pas ou a été déplacée. Respirez, on vous ramène à l'accueil.",
+    "backHome": "Retour à l'accueil"
   },
   "legal": {
     "title": "Mentions légales",
