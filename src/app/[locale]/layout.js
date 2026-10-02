@@ -45,7 +45,6 @@ export async function generateMetadata({ params }) {
       canonical: `${SITE_URL}/${locale}/`,
       languages: { fr: `${SITE_URL}/fr/`, en: `${SITE_URL}/en/`, 'x-default': `${SITE_URL}/` },
     },
-    icons: { icon: '/images/logo/logo-hairspa.png' },
   }
 }
 

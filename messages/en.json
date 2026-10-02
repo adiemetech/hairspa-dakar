@@ -135,6 +135,13 @@
     "eyebrow": "Our portfolio",
     "title": "Gallery of our work",
     "filterAria": "Filter the gallery by category",
+    "lightbox": {
+      "openAria": "Enlarge the photo",
+      "close": "Close the gallery",
+      "prev": "Previous photo",
+      "next": "Next photo",
+      "counter": "{index} / {total}"
+    },
     "filters": {
       "all": "View all",
       "tresses": "Braids & twists",
@@ -465,7 +472,8 @@
   },
   "a11y": {
     "skipToContent": "Skip to main content",
-    "breadcrumb": "Breadcrumb"
+    "breadcrumb": "Breadcrumb",
+    "backToTop": "Back to top"
   },
   "notFound": {
     "code": "404",

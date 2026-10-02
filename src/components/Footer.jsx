@@ -1,9 +1,13 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { Clock, MapPin, Phone } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { NAV_SECTIONS, PHONE_DISPLAY, SOCIAL_LINKS, WHATSAPP_NUMBER, waLink } from '@/constants'
 import { Link } from '@/i18n/navigation'
+
+// Apparition en cascade des colonnes du footer lorsqu'il entre dans le viewport.
+const COL = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } } }
 
 // lucide-react v1 ne fournit plus les icônes de marques → SVG inline
 function FacebookIcon(props) {
@@ -37,9 +41,15 @@ export default function Footer() {
 
   return (
     <footer className="bg-ink text-cream">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: '-60px' }}
+        transition={{ staggerChildren: 0.12 }}
+        className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4"
+      >
         {/* Logo + slogan — conteneur blanc : le multiply ne fonctionnerait pas sur fond sombre */}
-        <div>
+        <motion.div variants={COL}>
           <span className="inline-block rounded-card bg-white p-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -49,10 +59,10 @@ export default function Footer() {
             />
           </span>
           <p className="mt-3 text-sm leading-relaxed text-cream/70">{t('footer.slogan')}</p>
-        </div>
+        </motion.div>
 
         {/* Liens rapides */}
-        <nav aria-label={t('footer.quickLinks')}>
+        <motion.nav variants={COL} aria-label={t('footer.quickLinks')}>
           <p className="font-serif text-lg text-gold">{t('footer.quickLinks')}</p>
           <ul className="mt-3 space-y-2">
             {NAV_SECTIONS.map(({ href, labelKey }) => (
@@ -74,10 +84,10 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </nav>
+        </motion.nav>
 
         {/* Horaires — badge 7j/7 (exigence client) */}
-        <div>
+        <motion.div variants={COL}>
           <p className="font-serif text-lg text-gold">{t('contact.hoursLabel')}</p>
           <span className="mt-3 inline-flex items-center gap-1.5 rounded-btn bg-secondary px-3 py-1 text-xs font-semibold text-white">
             <Clock className="size-3.5" aria-hidden="true" />
@@ -95,10 +105,10 @@ export default function Footer() {
             <Phone className="size-4 shrink-0 text-primary" aria-hidden="true" />
             {PHONE_DISPLAY}
           </a>
-        </div>
+        </motion.div>
 
         {/* Réseaux sociaux */}
-        <div>
+        <motion.div variants={COL}>
           <p className="font-serif text-lg text-gold">{t('footer.follow')}</p>
           <ul className="mt-3 flex gap-3">
             {SOCIAL_LINKS.map(({ name, href }) => {
@@ -126,8 +136,8 @@ export default function Footer() {
           >
             WhatsApp : {PHONE_DISPLAY}
           </a>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Barre basse : copyright + pages légales */}
       <div className="border-t border-cream/15">

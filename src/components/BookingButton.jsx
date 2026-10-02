@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { CalendarHeart } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { BOOKING_URL, waLink } from '@/constants'
@@ -15,15 +16,18 @@ export default function BookingButton({ variant = 'primary', className = '' }) {
   const t = useTranslations()
 
   return (
-    <a
+    <motion.a
       href={BOOKING_URL ?? waLink(t('whatsapp.message'))}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={t('cta.bookingAria')}
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.96 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 22 }}
       className={`inline-flex items-center justify-center gap-2 rounded-btn px-5 py-2.5 font-semibold transition-colors ${VARIANTS[variant]} ${className}`}
     >
       <CalendarHeart className="size-5" aria-hidden="true" />
       {t('cta.booking')}
-    </a>
+    </motion.a>
   )
 }

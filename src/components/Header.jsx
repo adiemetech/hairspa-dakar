@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NAV_SECTIONS } from '@/constants'
 import { Link, usePathname } from '@/i18n/navigation'
 import BookingButton from './BookingButton'
@@ -13,19 +13,38 @@ export default function Header() {
   const t = useTranslations()
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  // Réduit la hauteur du header au scroll (shrink-on-scroll).
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 16)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const isActive = (href) => (href === '/' ? pathname === '/' : pathname.startsWith(href))
 
   return (
-    <header className="sticky top-0 z-40 border-b border-primary/20 bg-cream/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
+    <header
+      className={`sticky top-0 z-40 border-b bg-cream/90 backdrop-blur transition-shadow duration-300 ${
+        scrolled ? 'border-primary/20 shadow-md' : 'border-primary/20'
+      }`}
+    >
+      <div
+        className={`mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 transition-all duration-300 ${
+          scrolled ? 'py-2' : 'py-3'
+        }`}
+      >
         {/* Logo officiel — le fond blanc disparaît sur le crème grâce à multiply */}
         <Link href="/" className="flex items-center" aria-label="HairSpa Dakar">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/logo/logo-hairspa.png"
             alt="HairSpa Dakar"
-            className="h-10 w-auto mix-blend-multiply md:h-14"
+            className={`w-auto mix-blend-multiply transition-all duration-300 ${
+              scrolled ? 'h-8 md:h-10' : 'h-10 md:h-14'
+            }`}
           />
         </Link>
 

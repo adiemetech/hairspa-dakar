@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { ClipboardCheck, Droplets, HandHeart, Info, ShieldCheck } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
@@ -10,11 +11,20 @@ const SERVICES = [
   { key: 'braids', Icon: ShieldCheck, image: 'service-coiffure.jpg' },
 ]
 
+const GRID = { hidden: {}, show: { transition: { staggerChildren: 0.12 } } }
+const CARD = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+}
+
 function ServiceCard({ serviceKey, Icon, image }) {
   const t = useTranslations()
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-card border border-primary/15 bg-white shadow-sm transition-shadow hover:shadow-md">
+    <motion.article
+      variants={CARD}
+      className="group flex flex-col overflow-hidden rounded-card border border-primary/15 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+    >
       <div className="overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -25,7 +35,7 @@ function ServiceCard({ serviceKey, Icon, image }) {
         />
       </div>
       <div className="flex flex-1 flex-col p-6">
-        <span className="flex size-12 items-center justify-center rounded-full bg-secondary-light">
+        <span className="flex size-12 items-center justify-center rounded-full bg-secondary-light transition-transform duration-300 group-hover:scale-110">
           <Icon className="size-6 text-secondary-dark" aria-hidden="true" />
         </span>
         <h3 className="mt-4 font-serif text-xl font-semibold text-ink">
@@ -35,7 +45,7 @@ function ServiceCard({ serviceKey, Icon, image }) {
           {t(`services.items.${serviceKey}.text`)}
         </p>
       </div>
-    </article>
+    </motion.article>
   )
 }
 
@@ -50,11 +60,17 @@ export default function Services() {
           {t('services.title')}
         </h2>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <motion.div
+          variants={GRID}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-80px' }}
+          className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+        >
           {SERVICES.map(({ key, Icon, image }) => (
             <ServiceCard key={key} serviceKey={key} Icon={Icon} image={image} />
           ))}
-        </div>
+        </motion.div>
 
         <p className="mt-8 flex items-center justify-center gap-2 text-center text-sm text-ink/60">
           <Info className="size-4 shrink-0" aria-hidden="true" />

@@ -135,6 +135,13 @@
     "eyebrow": "Notre portfolio",
     "title": "Galerie de nos réalisations",
     "filterAria": "Filtrer la galerie par catégorie",
+    "lightbox": {
+      "openAria": "Agrandir la photo",
+      "close": "Fermer la galerie",
+      "prev": "Photo précédente",
+      "next": "Photo suivante",
+      "counter": "{index} / {total}"
+    },
     "filters": {
       "all": "Tout voir",
       "tresses": "Tresses & braids",
@@ -465,7 +472,8 @@
   },
   "a11y": {
     "skipToContent": "Aller au contenu principal",
-    "breadcrumb": "Fil d'Ariane"
+    "breadcrumb": "Fil d'Ariane",
+    "backToTop": "Retour en haut"
   },
   "notFound": {
     "code": "404",
