@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations({ locale, namespace: 'seo' })
   return {
     metadataBase: new URL(SITE_URL),
-    title: { default: t('title'), template: `%s | HairSpa Dakar` },
+    title: { default: t('title'), template: `%s` },
     description: t('description'),
     openGraph: {
       type: 'website',
