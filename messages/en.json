@@ -17,7 +17,7 @@
       },
       "tarifs": {
         "title": "Pricing & Services – HairSpa Dakar",
-        "description": "HairSpa Dakar price list: treatments, cuts, protective styles, Head Spa and packages. Gift cards available. Sacré-Cœur 2, Dakar."
+        "description": "HairSpa Dakar price list: treatments, cuts, protective styles, Head Spa and packages. Sacré-Cœur 2, Dakar."
       },
       "conseils": {
         "title": "Hair Care Tips & Routines – HairSpa Dakar",
@@ -168,28 +168,6 @@
       "team": "The HairSpa Dakar team in the salon"
     },
     "note": "Muted videos playing automatically."
-  },
-  "gift": {
-    "eyebrow": "Give the gift of care",
-    "title": "Gift Cards",
-    "text": "Give a moment of care: the HairSpa Dakar gift card is valid for all our services, in the salon, seven days a week.",
-    "steps": [
-      {
-        "title": "Choose the service",
-        "text": "A steam treatment, a head spa, a protective style… or a free amount."
-      },
-      {
-        "title": "Receive your card",
-        "text": "We prepare a personalized card in the recipient's name, printed or by message."
-      },
-      {
-        "title": "They book their moment",
-        "text": "The recipient picks their slot at the salon, at their own pace, whenever they wish."
-      }
-    ],
-    "cta": "Give a gift card",
-    "ctaAria": "Give a gift card via WhatsApp (new tab)",
-    "message": "Hello, I would like to give a HairSpa Dakar gift card."
   },
   "booking": {
     "eyebrow": "Booking",

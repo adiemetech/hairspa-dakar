@@ -1,6 +1,5 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import GiftCards from '@/components/GiftCards'
 import Reveal from '@/components/Reveal'
 import Services from '@/components/Services'
 import { SITE_URL } from '@/constants'
@@ -38,9 +37,6 @@ export default async function ServicesPage({ params }) {
       <Breadcrumbs locale={locale} items={[{ href: '/services', label: nav('services') }]} />
       <Reveal>
         <Services />
-      </Reveal>
-      <Reveal>
-        <GiftCards />
       </Reveal>
     </main>
   )

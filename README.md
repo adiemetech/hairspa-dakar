@@ -36,9 +36,9 @@ Chaque langue a ses URLs : `/fr/…` et `/en/…` (next-intl, `localePrefix: 'al
 |---|---|
 | `/` | Accueil (hero vidéo, services, réalisations, témoignages, bandeau CTA) |
 | `/a-propos` | Histoire, équipe, valeurs + témoignages |
-| `/services` | Prestations + cartes cadeaux |
+| `/services` | Prestations |
 | `/realisations` | Galerie filtrable + lightbox + vidéos |
-| `/tarifs` | Grille tarifaire en onglets + cartes cadeaux |
+| `/tarifs` | Grille tarifaire en onglets |
 | `/conseils` et `/conseils/<slug>` | Blog (3 articles) |
 | `/contact` | Formulaire (Formspree / repli WhatsApp) + carte + infos |
 | `/rendez-vous` | Prise de rendez-vous (widget si `BOOKING_URL`, sinon WhatsApp) |

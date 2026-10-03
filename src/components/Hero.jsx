@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Star } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
@@ -18,12 +18,11 @@ const TITLE_WORD = {
 
 export default function Hero() {
   const t = useTranslations()
-  const reducedMotion = useReducedMotion()
   const words = t('hero.title').split(' ')
 
   return (
     <section id="accueil" className="relative flex min-h-[92vh] items-center justify-center overflow-hidden">
-      {/* Ken Burns : zoom lent et continu sur le fond (désactivé si reduced-motion) */}
+      {/* Ken Burns : zoom lent et continu sur la photo (désactivé si reduced-motion) */}
       <motion.div
         className="absolute inset-0"
         aria-hidden="true"
@@ -31,30 +30,15 @@ export default function Hero() {
         animate={{ scale: 1.12 }}
         transition={{ duration: 18, ease: 'linear', repeat: Infinity, repeatType: 'reverse' }}
       >
-        {reducedMotion ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src="/images/hero/hero-accueil.jpg"
-            srcSet="/images/hero/hero-accueil-960.jpg 960w, /images/hero/hero-accueil.jpg 1440w"
-            sizes="100vw"
-            alt={t('hero.imageAlt')}
-            fetchPriority="high"
-            className="size-full object-cover"
-          />
-        ) : (
-          <video
-            poster="/images/hero/hero-accueil.jpg"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="size-full object-cover"
-          >
-            <source src="/videos/realisation-soin-vapeur.webm" type="video/webm" />
-            <source src="/videos/realisation-soin-vapeur.mp4" type="video/mp4" />
-          </video>
-        )}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero/hero-accueil.jpg"
+          srcSet="/images/hero/hero-accueil-960.jpg 960w, /images/hero/hero-accueil.jpg 1440w"
+          sizes="100vw"
+          alt={t('hero.imageAlt')}
+          fetchPriority="high"
+          className="size-full object-cover"
+        />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/55 to-ink/70" aria-hidden="true" />
 

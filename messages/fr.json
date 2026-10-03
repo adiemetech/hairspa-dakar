@@ -17,7 +17,7 @@
       },
       "tarifs": {
         "title": "Tarifs & prestations HairSpa Dakar",
-        "description": "Grille tarifaire HairSpa Dakar : soins, coupes, coiffures protectrices, Head Spa et forfaits. Cartes cadeaux disponibles. Sacré-Cœur 2, Dakar."
+        "description": "Grille tarifaire HairSpa Dakar : soins, coupes, coiffures protectrices, Head Spa et forfaits. Sacré-Cœur 2, Dakar."
       },
       "conseils": {
         "title": "Conseils & routines capillaires – HairSpa Dakar",
@@ -168,28 +168,6 @@
       "team": "L'équipe HairSpa Dakar dans le salon"
     },
     "note": "Vidéos muettes en lecture automatique."
-  },
-  "gift": {
-    "eyebrow": "Pensez-y",
-    "title": "Cartes Cadeaux",
-    "text": "Offrez un moment de soin : la carte cadeau HairSpa Dakar est valable sur l'ensemble de nos prestations, en salon, sept jours sur sept.",
-    "steps": [
-      {
-        "title": "Choisissez la prestation",
-        "text": "Un soin vapeur, un head spa, une coiffure protectrice… ou un montant libre."
-      },
-      {
-        "title": "Recevez votre carte",
-        "text": "Nous préparons une carte personnalisée au nom de la bénéficiaire, imprimée ou par message."
-      },
-      {
-        "title": "Elle réserve son moment",
-        "text": "La bénéficiaire choisit son créneau au salon, à son rythme, quand elle le souhaite."
-      }
-    ],
-    "cta": "Offrir une carte cadeau",
-    "ctaAria": "Offrir une carte cadeau via WhatsApp (nouvel onglet)",
-    "message": "Bonjour, je souhaite offrir une carte cadeau HairSpa Dakar."
   },
   "booking": {
     "eyebrow": "Réservation",
